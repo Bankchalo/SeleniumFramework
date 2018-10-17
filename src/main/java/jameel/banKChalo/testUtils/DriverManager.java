@@ -2,6 +2,7 @@ package jameel.banKChalo.testUtils;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.bcel.classfile.Constant;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,24 +21,25 @@ public class DriverManager {
 		driver.set(dvr);
 	}
 
-	public static WebDriver createDriverInstance(String browser,int time) {
+	public static WebDriver getDriverInstance(String browser, int time) {
 
 		if (driver.get() == null) {
-			if (browser.equalsIgnoreCase("firefox")) {
-				System.setProperty("webdriver.gecko.driver",
-						System.getProperty("user.dir")+"/resources/executables/geckodriver.exe");
+			if (browser.equalsIgnoreCase("FIREFOX")) {
+				System.setProperty("webdriver.gecko.driver", Constants.getFirefoxPath());
 				setDriver(new FirefoxDriver());
-			} else if (browser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver",
-						System.getProperty("user.dir")+"/resources/executables/chromedriver.exe");
+			}
+
+			else if (browser.equalsIgnoreCase("CHROME")) {
+				System.setProperty("webdriver.chrome.driver", Constants.getChromePath());
 				setDriver(new ChromeDriver());
 			}
 
-			else if (browser.equalsIgnoreCase("ie")) {
-				System.setProperty("webdriver.ie.driver",
-						System.getProperty("user.dir")+"/resources/executables/IEDriver.exe");
+			else if (browser.equalsIgnoreCase("IE")) {
+				System.setProperty("webdriver.ie.driver", Constants.getIEPath());
 				setDriver(new InternetExplorerDriver());
-			} else {
+			}
+
+			else {
 				System.out.println("Please Select a valid browser");
 			}
 
@@ -47,21 +49,19 @@ public class DriverManager {
 		return getDriver();
 	}
 
-	public void killDriverInstance() {
+	public static void killDriverInstance() {
 		if (driver.get() != null) {
 			driver.get().quit();
 			driver.set(null);
 		}
 	}
-	
-	
-	public static void maximizeBrowser()
-	{
+
+	public static void maximizeBrowser() {
 		driver.get().manage().window().maximize();
-		
+
 	}
-	public static void setImplecitWait(int time)
-	{
+
+	public static void setImplecitWait(int time) {
 		driver.get().manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
 
