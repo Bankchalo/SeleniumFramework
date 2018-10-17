@@ -1,20 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18387" started-at="2018-10-17T14:16:38Z" finished-at="2018-10-17T14:16:56Z">
+  <suite name="Default suite" duration-ms="20625" started-at="2018-10-17T16:09:49Z" finished-at="2018-10-17T16:10:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18387" started-at="2018-10-17T14:16:38Z" finished-at="2018-10-17T14:16:56Z">
+    <test name="Default test" duration-ms="20625" started-at="2018-10-17T16:09:49Z" finished-at="2018-10-17T16:10:09Z">
       <class name="jameel.banKChalo.baseSetup.InitialTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@4501b7af]" name="beforeTest" is-config="true" duration-ms="10985" started-at="2018-10-17T19:46:38Z" finished-at="2018-10-17T19:46:49Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="beforeSuite" is-config="true" duration-ms="446" started-at="2018-10-17T21:39:48Z" finished-at="2018-10-17T21:39:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@4501b7af]" name="test1" duration-ms="7320" started-at="2018-10-17T19:46:49Z" finished-at="2018-10-17T19:46:56Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="beforeClass" is-config="true" duration-ms="16" started-at="2018-10-17T21:39:49Z" finished-at="2018-10-17T21:39:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="beforeMethod" is-config="true" duration-ms="4510" started-at="2018-10-17T21:39:49Z" finished-at="2018-10-17T21:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void jameel.banKChalo.baseSetup.InitialTest.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="test1" duration-ms="1888" started-at="2018-10-17T21:39:53Z" finished-at="2018-10-17T21:39:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="afterMethod" is-config="true" duration-ms="1209" started-at="2018-10-17T21:39:55Z" finished-at="2018-10-17T21:39:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="beforeMethod" is-config="true" duration-ms="3426" started-at="2018-10-17T21:39:56Z" finished-at="2018-10-17T21:40:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void jameel.banKChalo.baseSetup.InitialTest.test2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="test2" duration-ms="8476" started-at="2018-10-17T21:40:00Z" finished-at="2018-10-17T21:40:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:jameel.banKChalo.baseSetup.InitialTest@3e6fa38a]" name="afterMethod" is-config="true" duration-ms="1095" started-at="2018-10-17T21:40:08Z" finished-at="2018-10-17T21:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- jameel.banKChalo.baseSetup.InitialTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -1,20 +1,66 @@
 package jameel.banKChalo.baseSetup;
 
+import java.lang.reflect.Method;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import jameel.banKChalo.testUtils.DriverManager;
+import jameel.banKChalo.testUtils.ExtentManager;
+import junit.framework.Assert;
 
 public class InitialTest {
-	WebDriver driver;
-	@BeforeTest
-	public void beforeTest() {
-		driver=DriverManager.createDriverInstance("chrome", 20);
+	WebDriver driver;	
+	public static ExtentReports extent;
+	public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
+	public static ThreadLocal<ExtentTest> testLevelReport = new ThreadLocal<ExtentTest>();
+	
+	@BeforeSuite
+	public void beforeSuite() {
+		//Load Config Files
+		
+		extent=ExtentManager.getExtent();
+	}
+	
+	@BeforeClass
+	public void beforeClass() {
+		ExtentTest parent = extent.createTest(getClass().getSimpleName());
+		classLevelReport.set(parent);
+	}
+
+	
+	
+	@BeforeMethod
+	public void beforeMethod(Method m) {
+		driver=DriverManager.getDriverInstance("chrome", 20);
+		ExtentTest test = classLevelReport.get().createNode(m.getName());
+		testLevelReport.set(test);
 	}
 	@Test
 	public void test1() {
+		driver.get("https://www.google.com");
+		testLevelReport.get().log(Status.PASS, "Google Launched");
+		
+	}
+	
+	@Test
+	public void test2() {
 		driver.get("https://www.gmail.com");
+		testLevelReport.get().log(Status.PASS, "Gmail Launched");
+	}
+	
+	@AfterMethod
+	public void afterMethod() {
+		DriverManager.killDriverInstance();
+		extent.flush();
 	}
 
 }
