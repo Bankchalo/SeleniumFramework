@@ -17,7 +17,7 @@ public class ExtentManager {
 			extent=new ExtentReports();
 			extent.attachReporter(getHtmlReporter());
 			extent.setSystemInfo("Owner", "Jameel");
-			extent.setAnalysisStrategy(AnalysisStrategy.SUITE);
+			extent.setAnalysisStrategy(AnalysisStrategy.TEST);
 			return extent;
 		}
 	}

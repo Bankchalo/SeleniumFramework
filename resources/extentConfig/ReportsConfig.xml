@@ -3,7 +3,7 @@
 	<configuration>
 		<!-- report theme -->
 		<!-- standard, dark -->
-		<theme>standard</theme>
+		<theme>dark</theme>
 
 		<!-- document encoding -->
 		<!-- defaults to UTF-8 -->
@@ -14,10 +14,10 @@
 		<protocol>https</protocol>
 
 		<!-- title of the document -->
-		<documentTitle>Way2Automation Architect_1</documentTitle>
+		<documentTitle>Ban K Chalo</documentTitle>
 
 		<!-- report name - displayed at top-nav -->
-		<reportName>Automation Report for Architect Batch 1</reportName>
+		<reportName>Framework bhai Ban k Chalo</reportName>
 
 		<!-- report headline - displayed at top-nav, after reportHeadline -->
 		<reportHeadline>Regression Testing Result</reportHeadline>
