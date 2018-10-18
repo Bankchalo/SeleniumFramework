@@ -7,6 +7,7 @@ public class Constants {
 	private static final String FIREFOX_PATH=System.getProperty("user.dir")+"/resources/executables/geckodriver.exe";
 	private static final String CONFIG = System.getProperty("user.dir")+"/resources/propertyFiles/config.properties";
 	private static final String EXTENT_CONFIG_PATH =System.getProperty("user.dir")+"/resources/extentConfig/ReportsConfig.xml";
+	private static final String SCREENSHOT_PATH="./testResults/extentReports/screenshots/";
 	
 	public static String getChromePath() {
 		return CHROME_PATH;
@@ -26,6 +27,10 @@ public class Constants {
 	
 	public static  String getExtentConfigPath() {
 		return EXTENT_CONFIG_PATH;
+	}
+	
+	public static  String getScreenshotPath() {
+		return SCREENSHOT_PATH;
 	}
 
 }
