@@ -8,6 +8,7 @@ public class Constants {
 	private static final String CONFIG = System.getProperty("user.dir")+"/resources/propertyFiles/config.properties";
 	private static final String EXTENT_CONFIG_PATH =System.getProperty("user.dir")+"/resources/extentConfig/ReportsConfig.xml";
 	private static final String SCREENSHOT_PATH="./testResults/extentReports/screenshots/";
+	private static final String ARCHIVED_SCREENSHOT_PATH="./testResults/screenshotArchived/";
 	
 	public static String getChromePath() {
 		return CHROME_PATH;
@@ -32,5 +33,10 @@ public class Constants {
 	public static  String getScreenshotPath() {
 		return SCREENSHOT_PATH;
 	}
+	
+	public static  String getArchivedScreenshotPath() {
+		return ARCHIVED_SCREENSHOT_PATH;
+	}
+
 
 }

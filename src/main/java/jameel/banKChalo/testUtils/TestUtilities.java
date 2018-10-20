@@ -15,19 +15,20 @@ public class TestUtilities {
 	
 	
 	
-	public static String captureScreenshot() {
+	public static void captureScreenshot(String testName) {
 		File scrFile =((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
 		Date d = new Date();
-		String screenshotName=d.toString().replaceAll("[ :]", "_")+".png";
-		String absoluteScreenshotPath=Constants.getScreenshotPath()+screenshotName;
+		String screenshotName=testName+"_"+d.toString().replaceAll("[ :]", "_")+".png";
+		String absoluteScreenshotPath=Constants.getScreenshotPath()+"failed_screen.png";
 		
 		try {
 			FileUtils.copyFile(scrFile, new File(absoluteScreenshotPath));
+			FileUtils.copyFile(scrFile, new File(Constants.getArchivedScreenshotPath()+screenshotName));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return screenshotName;
+		
 	}
 
 }
