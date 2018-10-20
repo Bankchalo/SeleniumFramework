@@ -5,8 +5,10 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
+import com.codoid.products.exception.FilloException;
 
 import jameel.banKChalo.baseSetup.InitialTest;
+import jameel.banKChalo.testUtils.FiloReader;
 import jameel.banKChalo.testUtils.TestUtilities;
 
 public class CustomListeners extends InitialTest implements ITestListener {
@@ -20,22 +22,24 @@ public class CustomListeners extends InitialTest implements ITestListener {
 		// TODO Auto-generated method stub
 		testLevelReport.get().log(Status.INFO,result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.PASS, "PASSED");
+		
 	}
 
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 
-		String screenshotName = TestUtilities.captureScreenshot();
+		TestUtilities.captureScreenshot(result.getName());
 		String exceptionMessage = result.getThrowable().getClass().toString();
 
 		testLevelReport.get()
 				.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
 						+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
-						+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/" + screenshotName
-						+ " target=\"_blank\"><img src =\"screenshots/" + screenshotName
+						+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen"
+						+ " target=\"_blank\"><img src =\"screenshots/failed_screen"
 						+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
 		testLevelReport.get().log(Status.INFO,result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.FAIL, "FAILED");
+		
 	}
 
 	public void onTestSkipped(ITestResult result) {
