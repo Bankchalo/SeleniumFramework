@@ -1,5 +1,6 @@
 package jameel.banKChalo.baseSetup;
 
+import java.io.FileNotFoundException;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
 
@@ -11,18 +12,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Recordset;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.stream.JsonReader;
 
 import jameel.banKChalo.customListeners.CustomListeners;
 import jameel.banKChalo.testUtils.DriverManager;
 import jameel.banKChalo.testUtils.ExtentManager;
 import jameel.banKChalo.testUtils.FiloReader;
-import junit.framework.Assert;
+import jameel.banKChalo.testUtils.JSONReader;
 
 @Listeners(CustomListeners.class)
 public class InitialTest {
@@ -30,6 +33,7 @@ public class InitialTest {
 	public static ExtentReports extent;
 	public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelReport = new ThreadLocal<ExtentTest>();
+	JSONReader json = new JSONReader();
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -59,7 +63,7 @@ public class InitialTest {
 		extent.flush();
 	}
 
-	@DataProvider(name = "dataProvider")
+	@DataProvider(name = "dataProviderOmi")
 	public Object[][] data(Method m) throws FilloException{
 		int j = 0;
 		Recordset record;
@@ -91,5 +95,10 @@ public class InitialTest {
 		return data;
 
 	}
+	
+	@DataProvider(name = "dataProviderViral")
+	public Object[][] dataProvider(Method m) throws JsonIOException, JsonSyntaxException, FileNotFoundException{
+		return json.getData(System.getProperty("user.dir")+"/resources/jsonFiles/Sample.json",m.getName().toString());
+}
 
 }

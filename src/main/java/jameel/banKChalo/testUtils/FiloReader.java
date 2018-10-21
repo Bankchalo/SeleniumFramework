@@ -14,7 +14,7 @@ public class FiloReader {
 	public Connection createConnection() {
 		if(connection==null) {
 			try {
-				connection = filo.getConnection("C:\\Users\\omijoshi\\eclipse-oxygen-workspace\\banKChalo\\resources\\excelFiles\\Data.xlsx");
+				connection = filo.getConnection(System.getProperty("user.dir")+"/resources/excelFiles/Data.xlsx");
 			} catch (FilloException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
