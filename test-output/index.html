@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\omijoshi\AppData\Local\Temp\testng-eclipse-1264868143\testng-customsuite.xml</span>
+                    <span>C:\Users\omijoshi\AppData\Local\Temp\testng-eclipse-1782187085\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="jameel.banKChalo.tests.MyFirstTest" hash-for-method="loginWithValidCredentials({TC_ID=loginWithValidCredentials, TRIP_TYPE=OneWay, USERNAME=mercury, SERVICE_CLASS=Business, PASSWO...)">loginWithValidCredentials({TC_ID=loginWithValidCredentials, TRIP_TYPE=OneWay, USERNAME=mercury, SERVICE_CLASS=Business, PASSWO...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="jameel.banKChalo.tests.MyFirstTest" hash-for-method="loginWithValidCredentialsViral({PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mer...)">loginWithValidCredentialsViral({PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mer...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,12 +136,20 @@
                   <span class="parameters">({TC_ID=loginWithValidCredentials, TRIP_TYPE=OneWay, USERNAME=mercury, SERVICE_CLASS=Business, PASSWORD=mercury})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentialsViral({PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mer...)">
+                  </a> <!-- loginWithValidCredentialsViral({PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mer...) -->
+                  <span class="method-name">loginWithValidCredentialsViral</span>
+                  <span class="parameters">({PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mercury, TestCaseName=iPhone})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\omijoshi\AppData\Local\Temp\testng-eclipse-1264868143\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\omijoshi\AppData\Local\Temp\testng-eclipse-1782187085\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,16 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginWithValidCredentials')
 data.setCell(0, 2, 'jameel.banKChalo.tests.MyFirstTest')
-data.setCell(0, 3, 6466);
+data.setCell(0, 3, 7731);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginWithValidCredentialsViral')
+data.setCell(1, 2, 'jameel.banKChalo.tests.MyFirstTest')
+data.setCell(1, 3, 6231);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -227,19 +244,31 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">479 ms</span>
+                <span class="method-start">511 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentials(java.util.Hashtable))</span>
-                <span class="method-start">1345 ms</span>
+                <span class="method-start">1407 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials({TC_ID=loginWithValidCredentials, TRIP_TYPE=OneWay, USERNAME=mercury, SERVICE_CLASS=Business, PASSWO...)</span>
-                <span class="method-start">9149 ms</span>
+                <span class="method-start">9160 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod(public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentials(java.util.Hashtable), [Test...)</span>
-                <span class="method-start">15618 ms</span>
+                <span class="method-start">16903 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap))</span>
+                <span class="method-start">18836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentialsViral({PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mer...)</span>
+                <span class="method-start">32457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap), [T...)</span>
+                <span class="method-start">38692 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
