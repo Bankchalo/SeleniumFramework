@@ -1,0 +1,18 @@
+{
+	"Classes":[
+		{
+		"ClassName":MyFirstTest,
+		"Methods":[
+			{
+			"testCaseName":loginWithValidCredentials,
+			"enabled":true			
+			},
+			{
+			"testCaseName":"loginWithValidCredentialsViral",
+			"enabled":true			
+			}
+		]
+		
+		}
+		]
+}
