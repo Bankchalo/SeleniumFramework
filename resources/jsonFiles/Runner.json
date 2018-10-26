@@ -1,15 +1,16 @@
 {
 	"Classes":[
 		{
-		"ClassName":MyFirstTest,
+		"ClassName":"MyFirstTest",
+		"isEnabled":true,
 		"Methods":[
 			{
-			"testCaseName":loginWithValidCredentials,
-			"enabled":true			
+			"testCaseName":"loginWithValidCredentials",
+			"isEnabled":true			
 			},
 			{
 			"testCaseName":"loginWithValidCredentialsViral",
-			"enabled":true			
+			"isEnabled":true			
 			}
 		]
 		
