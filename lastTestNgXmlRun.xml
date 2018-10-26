@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite">
+  <test name="My Test">
+    <classes>
+      <class name="jameel.banKChalo.tests.MyFirstTest">
+        <methods>
+          <include name="loginWithValidCredentials"/>
+          <include name="loginWithValidCredentialsViral"/>
+        </methods>
+      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
+    </classes>
+  </test> <!-- My Test -->
+</suite> <!-- My Suite -->
