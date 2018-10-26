@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jameel.banKChalo.pages.LandingPageMethods">
+      <class name="jameel.banKChalo.tests.MyFirstTest">
         <methods>
           <include name="afterMethod"/>
+          <include name="loginWithValidCredentialsViral" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="beforeMethod"/>
-          <include name="loginWithValidCredentials" invocation-numbers="0"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- jameel.banKChalo.pages.LandingPageMethods -->
+      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
