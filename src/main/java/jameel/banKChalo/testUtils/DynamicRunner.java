@@ -51,7 +51,7 @@ public class DynamicRunner {
 		createTestRunner();
 	}*/
 	@Test
-	public static void createTestRunner() {
+	public void createTestRunner() {
 		
 		JsonArray jsonArray	=readJson();
 		//Create a testNG istance to run the testNg.xml
@@ -64,12 +64,12 @@ public class DynamicRunner {
 		//suite.setFileName("Sample");
 		
 		//Create a XmlTest instance to create a test node
-		XmlTest test = new XmlTest();
+		XmlTest test = new XmlTest(suite);
 		test.setName("My Test");
 		
 		
 		//Create a list of XmlTest to store multiple test tags.
-		List<XmlTest> tests = new ArrayList<>();
+		//List<XmlTest> tests = new ArrayList<>();
 		
 		
 		
@@ -115,11 +115,12 @@ public class DynamicRunner {
 		//add all the tests inside test tag
 		test.setXmlClasses(myClasses);
 		
-		tests.add(test);
-		suite.setTests(tests);
+		//tests.add(test);
+		//suite.setTests(tests);
 		suites.add(suite);
 		//System.out.println(suite.toXml());
 	    testNG.setXmlSuites(suites);
+	 
 	    
 	    File file = new File("lastTestNgXmlRun.xml");
 	    FileWriter write;
