@@ -6,13 +6,14 @@ import java.util.Hashtable;
 import org.testng.annotations.Test;
 
 import jameel.banKChalo.baseSetup.InitialTest;
+import jameel.banKChalo.customListeners.UseAsTestRailId;
 import jameel.banKChalo.pages.FindFlight;
 import jameel.banKChalo.pages.LandingPage;
 import jameel.banKChalo.pages.SelectFlights;
 
 public class MyFirstTest extends InitialTest{
 
-	@Test(dataProvider="dataProviderOmi")
+	@Test(dataProvider="dataProviderOmi",enabled=false)
 	public void loginWithValidCredentials(Hashtable<String,String> data) {
 		LandingPage lpage = new LandingPage();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
@@ -22,6 +23,7 @@ public class MyFirstTest extends InitialTest{
 	}
 	
 	@Test(dataProvider="dataProviderViral")
+	@UseAsTestRailId(testRailId=68)
 	public void loginWithValidCredentialsViral(HashMap<String,String> data) {
 		LandingPage lpage = new LandingPage();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
@@ -29,5 +31,4 @@ public class MyFirstTest extends InitialTest{
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
 		SelectFlights sFlight = hPage.findFlights();
 	}
-
 }

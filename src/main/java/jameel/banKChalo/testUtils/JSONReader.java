@@ -25,14 +25,14 @@ public class JSONReader {
 		System.out.println(getData("C:\\Users\\VIRAL\\git\\SeleniumFramework\\resources\\test data\\Sample.json","iPhone"));
 	}*/
 	
-	public static Object[][] getData(String Json_Path,String TestCaseName) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
+	public  Object[][] getData(String Json_Path) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
 		JsonParser jsonParser= new JsonParser();
 		JsonObject jsonObj = jsonParser.parse(new FileReader(Json_Path)).getAsJsonObject();
 		JsonArray array= (JsonArray) jsonObj.get("DataSet");
-		return 	searchJsonElement(array,TestCaseName);
+		return 	searchJsonElement(array);
 	}
 	
-	public static Object[][] searchJsonElement(JsonArray jsonArray,String TestCaseName) {
+	public static Object[][] searchJsonElement(JsonArray jsonArray) {
 		
 		HashMap<String,String> map= new HashMap();
 		int i=0,j=0,col=0;
@@ -40,8 +40,6 @@ public class JSONReader {
 		Object[][] matrix= new Object[jsonArray.size()][1];
 		for(JsonElement jsonElement :jsonArray)
 		{
-			if(jsonElement.toString().contains("iPhone"))
-					{
 			for(Map.Entry<String,JsonElement> entry:jsonElement.getAsJsonObject().entrySet())
 			{
 				String key = entry.getKey().toString();
@@ -53,7 +51,6 @@ public class JSONReader {
 			}
 			matrix[j][0]=map;
 			j++;
-		}
 		}
 		return matrix;
 	}
