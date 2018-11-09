@@ -3,11 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jameel.banKChalo.testUtils.DynamicRunner">
+      <class name="jameel.banKChalo.tests.MyFirstTest">
         <methods>
-          <include name="createTestRunner"/>
+          <include name="afterMethod"/>
+<<<<<<< HEAD
+          <include name="loginWithValidCredentialsViral" invocation-numbers="0"/>
+=======
+          <include name="loginWithValidCredentialsViral"/>
+>>>>>>> aacce95e35a04c3ad199dca562120bf77d35b678
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- jameel.banKChalo.testUtils.DynamicRunner -->
+      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -22,10 +22,12 @@ import com.google.gson.JsonSyntaxException;
 import com.google.gson.stream.JsonReader;
 
 import jameel.banKChalo.customListeners.CustomListeners;
+import jameel.banKChalo.testUtils.APIClient;
 import jameel.banKChalo.testUtils.DriverManager;
 import jameel.banKChalo.testUtils.ExtentManager;
 import jameel.banKChalo.testUtils.FiloReader;
 import jameel.banKChalo.testUtils.JSONReader;
+import jameel.banKChalo.testUtils.TestRaiIntegrator;
 
 @Listeners(CustomListeners.class)
 public class InitialTest {
@@ -33,13 +35,14 @@ public class InitialTest {
 	public static ExtentReports extent;
 	public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelReport = new ThreadLocal<ExtentTest>();
+	public static APIClient testRail;
 	JSONReader json = new JSONReader();
 
 	@BeforeSuite
 	public void beforeSuite() {
-		// Load Config Files
-
+		// Load Config Files	
 		extent = ExtentManager.getExtent();
+		testRail=TestRaiIntegrator.setUpTestRail();
 	}
 
 	@BeforeClass
@@ -98,7 +101,7 @@ public class InitialTest {
 	
 	@DataProvider(name = "dataProviderViral")
 	public Object[][] dataProvider(Method m) throws JsonIOException, JsonSyntaxException, FileNotFoundException{
-		return json.getData(System.getProperty("user.dir")+"/resources/jsonFiles/Sample.json",m.getName().toString());
+		return json.getData(System.getProperty("user.dir")+"/resources/jsonFiles/"+m.getDeclaringClass().getName().toString().split("\\.")[3]+"/"+m.getName().toString()+".json");
 }
 
 }
