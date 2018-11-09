@@ -3,11 +3,7 @@
 <suite name="My Suite">
   <test name="My Test">
     <classes>
-      <class name="jameel.banKChalo.tests.MyFirstTest">
-        <methods>
-          <include name="loginWithValidCredentials"/>
-          <include name="loginWithValidCredentialsViral"/>
-        </methods>
+      <class name="jameel.banKChalo.testUtils.DynamicRunner">
       </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
     </classes>
   </test> <!-- My Test -->

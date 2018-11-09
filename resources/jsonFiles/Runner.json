@@ -10,6 +10,7 @@
 			},
 			{
 			"testCaseName":"loginWithValidCredentialsViral",
+<<<<<<< HEAD
 			"isEnabled":true		
 			}
 		]
@@ -26,6 +27,9 @@
 			{
 			"testCaseName":"loginWithValidCredentialsViral",
 			"isEnabled":true		
+=======
+			"isEnabled":true			
+>>>>>>> aacce95e35a04c3ad199dca562120bf77d35b678
 			}
 		]
 		

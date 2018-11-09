@@ -10,12 +10,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import org.testng.annotations.Test;
+
 import org.testng.xml.XmlClass;
 import org.testng.xml.XmlInclude;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
-import com.beust.testng.TestNG;
+
+import org.testng.TestNG;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonIOException;
@@ -45,12 +50,13 @@ public class DynamicRunner {
 		return arr;
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		//JsonArray arr=readJson();
 		createTestRunner();
-	}
-	
-	public static void createTestRunner() {
+	}*/
+	@Test
+	public void createTestRunner() {
+
 		
 		JsonArray jsonArray	=readJson();
 		//Create a testNG istance to run the testNg.xml
@@ -61,15 +67,18 @@ public class DynamicRunner {
 		XmlSuite suite = new XmlSuite();
 		suite.setName("My Suite");
 		
+		//suite.setFileName("Sample");
+		
 		//Create a XmlTest instance to create a test node
-		XmlTest test = new XmlTest();
+		XmlTest test = new XmlTest(suite);
+
 		test.setName("My Test");
 		
 		
 		//Create a list of XmlTest to store multiple test tags.
+
 		List<XmlTest> tests = new ArrayList<>();
-		
-		
+
 		
 		//Create a list of XmlClass to store multiple class tags.
 		List<XmlClass> myClasses = new ArrayList<> ();
@@ -112,12 +121,13 @@ public class DynamicRunner {
 		}
 		//add all the tests inside test tag
 		test.setXmlClasses(myClasses);
-		
+
 		tests.add(test);
 		suite.setTests(tests);
 		suites.add(suite);
 		System.out.println(suite.toXml());
 	    testNG.setXmlSuites(suites);
+
 	    File file = new File("lastTestNgXmlRun.xml");
 	    FileWriter write;
 		try {
@@ -129,7 +139,9 @@ public class DynamicRunner {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//testNG.run();	    
+
+		testNG.run();	    
+
 	    
 	}
 	
