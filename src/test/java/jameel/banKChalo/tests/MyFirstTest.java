@@ -23,12 +23,12 @@ public class MyFirstTest extends InitialTest{
 	}
 	
 	@Test(dataProvider="dataProviderViral")
-	@UseAsTestRailId(testRailId=68)
+	@UseAsTestRailId(testRailId= {"51","52"})
 	public void loginWithValidCredentialsViral(HashMap<String,String> data) {
-		LandingPage lpage = new LandingPage();
+		/*LandingPage lpage = new LandingPage();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
 		hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
-		SelectFlights sFlight = hPage.findFlights();
+		SelectFlights sFlight = hPage.findFlights();*/
 	}
 }

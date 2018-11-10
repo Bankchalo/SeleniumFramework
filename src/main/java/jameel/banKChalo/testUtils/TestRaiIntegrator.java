@@ -56,7 +56,10 @@ public class TestRaiIntegrator {
 			}
 		}
 			UseAsTestRailId useAsTestName = testMethod.getAnnotation(UseAsTestRailId.class);
-			TestID = Integer.toString(useAsTestName.testRailId());
+			//Added logic for differnt manual cases pointing to single automation case
+			for(int i=0;i<useAsTestName.testRailId().length;i++)
+			{
+			TestID =useAsTestName.testRailId()[i];// Integer.toString(useAsTestName.testRailId());
 			System.out.println("Test Rail ID = " + TestID);
 			//}
 		try {
@@ -64,6 +67,7 @@ public class TestRaiIntegrator {
 		} catch (IOException | APIException e) {
 			e.printStackTrace();
 		}
+			}
 		
 	}
 	
