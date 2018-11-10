@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="128098" started-at="2018-11-10T11:35:08Z" finished-at="2018-11-10T11:37:16Z">
+  <suite name="Default suite" duration-ms="8503" started-at="2018-11-10T11:56:06Z" finished-at="2018-11-10T11:56:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="128098" started-at="2018-11-10T11:35:08Z" finished-at="2018-11-10T11:37:16Z">
+    <test name="Default test" duration-ms="8503" started-at="2018-11-10T11:56:06Z" finished-at="2018-11-10T11:56:14Z">
       <class name="jameel.banKChalo.tests.MyFirstTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@2c767a52]" name="beforeSuite" is-config="true" duration-ms="442" started-at="2018-11-10T17:05:08Z" finished-at="2018-11-10T17:05:08Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="beforeSuite" is-config="true" duration-ms="408" started-at="2018-11-10T17:26:05Z" finished-at="2018-11-10T17:26:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@2c767a52]" name="beforeClass" is-config="true" duration-ms="9" started-at="2018-11-10T17:05:08Z" finished-at="2018-11-10T17:05:08Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="beforeClass" is-config="true" duration-ms="7" started-at="2018-11-10T17:26:06Z" finished-at="2018-11-10T17:26:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@2c767a52]" name="beforeMethod" is-config="true" duration-ms="7466" started-at="2018-11-10T17:05:08Z" finished-at="2018-11-10T17:05:16Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="beforeMethod" is-config="true" duration-ms="7043" started-at="2018-11-10T17:26:06Z" finished-at="2018-11-10T17:26:13Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@2c767a52]" name="loginWithValidCredentialsViral" duration-ms="70" started-at="2018-11-10T17:05:16Z" data-provider="dataProviderViral" finished-at="2018-11-10T17:05:16Z">
+        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="loginWithValidCredentialsViral" duration-ms="45" started-at="2018-11-10T17:26:13Z" data-provider="dataProviderViral" finished-at="2018-11-10T17:26:13Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentialsViral -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@2c767a52]" name="afterMethod" is-config="true" duration-ms="1501" started-at="2018-11-10T17:07:15Z" finished-at="2018-11-10T17:07:16Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="afterMethod" is-config="true" duration-ms="1347" started-at="2018-11-10T17:26:13Z" finished-at="2018-11-10T17:26:14Z">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@2c767a52] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948] output={null}]]]>
               </value>
             </param>
           </params>

@@ -23,7 +23,7 @@ public class MyFirstTest extends InitialTest{
 	}
 	
 	@Test(dataProvider="dataProviderViral")
-	@UseAsTestRailId(testRailId= {"51","52"})
+	//@UseAsTestRailId(testRailId= {"51","52"})
 	public void loginWithValidCredentialsViral(HashMap<String,String> data) {
 		/*LandingPage lpage = new LandingPage();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));

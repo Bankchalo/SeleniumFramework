@@ -54,9 +54,9 @@ public class TestRaiIntegrator {
 				data.put("status_id", new Integer(3));
 				data.put("comment", "This case is not tested");
 			}
-		}
+		
 			UseAsTestRailId useAsTestName = testMethod.getAnnotation(UseAsTestRailId.class);
-			//Added logic for differnt manual cases pointing to single automation case
+			//Added logic for different manual cases pointing to single automation case
 			for(int i=0;i<useAsTestName.testRailId().length;i++)
 			{
 			TestID =useAsTestName.testRailId()[i];// Integer.toString(useAsTestName.testRailId());
@@ -67,6 +67,11 @@ public class TestRaiIntegrator {
 		} catch (IOException | APIException e) {
 			e.printStackTrace();
 		}
+			}
+		}
+			else
+			{
+				System.out.println("You have not given the testrail testcase id for this user");
 			}
 		
 	}
