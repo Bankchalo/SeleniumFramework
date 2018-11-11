@@ -1,88 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="My Suite" duration-ms="23117" started-at="2018-10-25T16:56:41Z" finished-at="2018-10-25T16:57:04Z">
+  <suite name="Default suite" duration-ms="32883" started-at="2018-11-11T11:56:50Z" finished-at="2018-11-11T11:57:23Z">
     <groups>
     </groups>
-    <test name="My Test" duration-ms="23117" started-at="2018-10-25T16:56:41Z" finished-at="2018-10-25T16:57:04Z">
-      <class name="jameel.banKChalo.tests.MyFirstTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@204f30ec]" name="beforeSuite" is-config="true" duration-ms="1339" started-at="2018-10-25T22:26:40Z" finished-at="2018-10-25T22:26:41Z">
+    <test name="Default test" duration-ms="32883" started-at="2018-11-11T11:56:50Z" finished-at="2018-11-11T11:57:23Z">
+      <class name="jameel.banKChalo.testUtils.DynamicRunner">
+        <test-method status="PASS" signature="createTestRunner()[pri:0, instance:jameel.banKChalo.testUtils.DynamicRunner@46daef40]" name="createTestRunner" duration-ms="32852" started-at="2018-11-11T11:56:50Z" finished-at="2018-11-11T11:57:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@204f30ec]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-10-25T22:26:41Z" finished-at="2018-10-25T22:26:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@204f30ec]" name="beforeMethod" is-config="true" duration-ms="15228" started-at="2018-10-25T22:26:42Z" finished-at="2018-10-25T22:26:57Z">
-=======
-  <suite name="Default suite" duration-ms="18273" started-at="2018-11-09T12:46:16Z" finished-at="2018-11-09T12:46:35Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="18273" started-at="2018-11-09T12:46:16Z" finished-at="2018-11-09T12:46:35Z">
-      <class name="jameel.banKChalo.tests.MyFirstTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@343f4d3d]" name="beforeSuite" is-config="true" duration-ms="407" started-at="2018-11-09T18:16:16Z" finished-at="2018-11-09T18:16:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@343f4d3d]" name="beforeClass" is-config="true" duration-ms="5" started-at="2018-11-09T18:16:16Z" finished-at="2018-11-09T18:16:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@343f4d3d]" name="beforeMethod" is-config="true" duration-ms="7774" started-at="2018-11-09T18:16:16Z" finished-at="2018-11-09T18:16:24Z">
->>>>>>> aacce95e35a04c3ad199dca562120bf77d35b678
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@204f30ec]" name="loginWithValidCredentialsViral" duration-ms="6337" started-at="2018-10-25T22:26:57Z" data-provider="dataProviderViral" finished-at="2018-10-25T22:27:03Z">
-=======
-        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@343f4d3d]" name="loginWithValidCredentialsViral" duration-ms="6470" started-at="2018-11-09T18:16:24Z" data-provider="dataProviderViral" finished-at="2018-11-09T18:16:31Z">
->>>>>>> aacce95e35a04c3ad199dca562120bf77d35b678
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mercury, TestCaseName=iPhone}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentialsViral -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@204f30ec]" name="afterMethod" is-config="true" duration-ms="1376" started-at="2018-10-25T22:27:03Z" finished-at="2018-10-25T22:27:04Z">
-=======
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@343f4d3d]" name="afterMethod" is-config="true" duration-ms="1523" started-at="2018-11-09T18:16:33Z" finished-at="2018-11-09T18:16:35Z">
->>>>>>> aacce95e35a04c3ad199dca562120bf77d35b678
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-<<<<<<< HEAD
-                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@204f30ec] output={null}]]]>
-=======
-                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@343f4d3d] output={null}]]]>
->>>>>>> aacce95e35a04c3ad199dca562120bf77d35b678
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
-    </test> <!-- My Test -->
-  </suite> <!-- My Suite -->
+        </test-method> <!-- createTestRunner -->
+      </class> <!-- jameel.banKChalo.testUtils.DynamicRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
