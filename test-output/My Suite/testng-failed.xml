@@ -6,8 +6,8 @@
       <class name="jameel.banKChalo.tests.MyFirstTest">
         <methods>
           <include name="afterMethod"/>
-          <include name="loginWithValidCredentialsViral"/>
           <include name="beforeSuite"/>
+          <include name="loginWithValidCredentials" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
         </methods>

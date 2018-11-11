@@ -11,6 +11,7 @@ import jameel.banKChalo.customListeners.UseAsTestRailId;
 import jameel.banKChalo.pages.FindFlight;
 import jameel.banKChalo.pages.LandingPage;
 import jameel.banKChalo.pages.SelectFlights;
+import junit.framework.Assert;
 
 public class MyFirstTest extends InitialTest{
 
@@ -22,6 +23,7 @@ public class MyFirstTest extends InitialTest{
 		hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
 		SelectFlights sFlight = hPage.findFlights();
+		Assert.fail();
 	}
 	
 	@Test(dataProvider="dataProviderOmi")
