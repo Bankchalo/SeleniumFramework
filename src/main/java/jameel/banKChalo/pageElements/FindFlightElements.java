@@ -2,9 +2,9 @@ package jameel.banKChalo.pageElements;
 
 import org.openqa.selenium.By;
 
-import jameel.banKChalo.baseSetup.InitialTest;
+import jameel.banKChalo.pages.BasePage;
 
-public class FindFlightElements extends InitialTest{
+public class FindFlightElements extends BasePage{
 	
 	protected By radOneWayTrip = By.xpath("//input[@name='tripType' and @value='oneway']");
 	protected By radRoundTrip = By.xpath("//input[@name='tripType' and @value='roundtrip']");

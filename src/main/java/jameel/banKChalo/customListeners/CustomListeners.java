@@ -32,9 +32,9 @@ public class CustomListeners extends InitialTest implements ITestListener {
 		testLevelReport.get()
 				.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
 						+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
-						+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen"
+						+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen.png"
 						+ " target=\"_blank\"><img src =\"screenshots/failed_screen"
-						+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
+						+ "\" height=\"100\" width =\"150\"/></a>" + "</details>");
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.FAIL, "FAILED");
 		TestRaiIntegrator.addStatusForCase(result);

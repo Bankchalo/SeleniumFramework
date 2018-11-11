@@ -66,7 +66,8 @@ public class TestRaiIntegrator {
 			//}
 		try {
 			JSONObject r = (JSONObject) client.sendPost("add_result/"+TestID, data);
-		} catch (IOException | APIException e) {
+		} catch
+		(IOException | APIException e) {
 			e.printStackTrace();
 		}
 		
