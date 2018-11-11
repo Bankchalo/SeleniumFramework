@@ -1,8 +1,11 @@
 package jameel.banKChalo.testUtils;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -29,6 +32,18 @@ public class TestUtilities {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public static Properties loadConfigProperties() {
+		Properties prop = new Properties();
+		try {
+			FileInputStream fis = new FileInputStream(new File(System.getProperty("user.dir")+"/resources/propertyFiles/config.properties"));
+			prop.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return prop;
 	}
 
 }
