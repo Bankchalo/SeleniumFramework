@@ -6,6 +6,6 @@ import java.lang.annotation.*;
 @Target(ElementType.METHOD)
 public @interface UseAsTestRailId
 {
-public int testRailId() default 0;
+public String[] testRailId() default "";
 public String[] tags() default "";
 }
