@@ -6,29 +6,33 @@ import java.util.Hashtable;
 import org.testng.annotations.Test;
 
 import jameel.banKChalo.baseSetup.InitialTest;
+import jameel.banKChalo.customListeners.UseAsTestCaseId;
 import jameel.banKChalo.customListeners.UseAsTestRailId;
 import jameel.banKChalo.pages.FindFlight;
 import jameel.banKChalo.pages.LandingPage;
 import jameel.banKChalo.pages.SelectFlights;
+import junit.framework.Assert;
 
 public class MyFirstTest extends InitialTest{
 
-	@Test(dataProvider="dataProviderOmi",enabled=false)
+	@Test(dataProvider="dataProviderOmi")
+	@UseAsTestCaseId(testCaseId=11)
 	public void loginWithValidCredentials(Hashtable<String,String> data) {
 		LandingPage lpage = new LandingPage();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
 		hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
 		SelectFlights sFlight = hPage.findFlights();
+		Assert.fail();
 	}
 	
-	@Test(dataProvider="dataProviderViral")
-	//@UseAsTestRailId(testRailId= {"51","52"})
-	public void loginWithValidCredentialsViral(HashMap<String,String> data) {
-		/*LandingPage lpage = new LandingPage();
+	@Test(dataProvider="dataProviderOmi")
+	@UseAsTestCaseId(testCaseId=10)
+	public void loginWithValidCredentialsViral(Hashtable<String,String> data) {
+		LandingPage lpage = new LandingPage();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
 		hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
-		SelectFlights sFlight = hPage.findFlights();*/
+		SelectFlights sFlight = hPage.findFlights();
 	}
 }

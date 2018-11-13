@@ -14,6 +14,7 @@ public class FindFlight extends FindFlightElements{
 			WebElement oneWay=driver.findElement(radOneWayTrip);
 			if(!oneWay.isSelected())
 				oneWay.click();
+				
 			break;			
 			
 		case "Round":
@@ -36,7 +37,7 @@ public class FindFlight extends FindFlightElements{
 			WebElement ecoClass=driver.findElement(radEconomyClass);
 			if(!ecoClass.isSelected())
 				ecoClass.click();
-			break;			
+			break;		
 			
 		case "Business":
 			WebElement busClass=driver.findElement(radBusinessClass);

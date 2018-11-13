@@ -1,20 +1,12 @@
 package jameel.banKChalo.customListeners;
 
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.json.simple.JSONObject;
-import org.testng.IClass;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
+
 import jameel.banKChalo.baseSetup.InitialTest;
-import jameel.banKChalo.testUtils.APIClient;
-import jameel.banKChalo.testUtils.APIException;
 import jameel.banKChalo.testUtils.TestRaiIntegrator;
 import jameel.banKChalo.testUtils.TestUtilities;
 
@@ -28,7 +20,7 @@ public class CustomListeners extends InitialTest implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.PASS, "PASSED");
-		TestRaiIntegrator.addStatus(result);
+		TestRaiIntegrator.addStatusForCase(result);
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -40,12 +32,12 @@ public class CustomListeners extends InitialTest implements ITestListener {
 		testLevelReport.get()
 				.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
 						+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
-						+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen"
+						+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen.png"
 						+ " target=\"_blank\"><img src =\"screenshots/failed_screen"
-						+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
+						+ "\" height=\"100\" width =\"150\"/></a>" + "</details>");
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.FAIL, "FAILED");
-		TestRaiIntegrator.addStatus(result);
+		TestRaiIntegrator.addStatusForCase(result);
 
 	}
 
@@ -54,7 +46,7 @@ public class CustomListeners extends InitialTest implements ITestListener {
 
 		testLevelReport.get().debug(result.getMethod().getMethodName().toUpperCase() + " isSkipped");
 		testLevelReport.get().log(Status.SKIP, "SKIPPED");
-		TestRaiIntegrator.addStatus(result);
+		TestRaiIntegrator.addStatusForCase(result);
 
 	}
 

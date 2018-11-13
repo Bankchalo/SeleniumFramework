@@ -1,59 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8503" started-at="2018-11-10T11:56:06Z" finished-at="2018-11-10T11:56:14Z">
+  <suite name="Default suite" duration-ms="34952" started-at="2018-11-11T14:59:30Z" finished-at="2018-11-11T15:00:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8503" started-at="2018-11-10T11:56:06Z" finished-at="2018-11-10T11:56:14Z">
-      <class name="jameel.banKChalo.tests.MyFirstTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="beforeSuite" is-config="true" duration-ms="408" started-at="2018-11-10T17:26:05Z" finished-at="2018-11-10T17:26:06Z">
+    <test name="Default test" duration-ms="34952" started-at="2018-11-11T14:59:30Z" finished-at="2018-11-11T15:00:05Z">
+      <class name="jameel.banKChalo.testUtils.DynamicRunner">
+        <test-method status="PASS" signature="createTestRunner()[pri:0, instance:jameel.banKChalo.testUtils.DynamicRunner@46daef40]" name="createTestRunner" duration-ms="34921" started-at="2018-11-11T14:59:30Z" finished-at="2018-11-11T15:00:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="beforeClass" is-config="true" duration-ms="7" started-at="2018-11-10T17:26:06Z" finished-at="2018-11-10T17:26:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="beforeMethod" is-config="true" duration-ms="7043" started-at="2018-11-10T17:26:06Z" finished-at="2018-11-10T17:26:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="loginWithValidCredentialsViral" duration-ms="45" started-at="2018-11-10T17:26:13Z" data-provider="dataProviderViral" finished-at="2018-11-10T17:26:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{PASSWORD=mercury, SERVICE_CLASS=Business, TRIP_TYPE=OneWay, TestCaseID=0123-4567-8888, USERNAME=mercury, TestCaseName=iPhone}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentialsViral -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948]" name="afterMethod" is-config="true" duration-ms="1347" started-at="2018-11-10T17:26:13Z" finished-at="2018-11-10T17:26:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.HashMap)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@42e26948] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
+        </test-method> <!-- createTestRunner -->
+      </class> <!-- jameel.banKChalo.testUtils.DynamicRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
