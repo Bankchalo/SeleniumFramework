@@ -6,6 +6,7 @@ import java.util.Hashtable;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -39,7 +40,7 @@ public class InitialTest {
 	public static APIClient testRail;
 	public static Properties property;
 	JSONReader json = new JSONReader();
-
+	
 	@BeforeSuite
 	public void beforeSuite() {
 		// Load Config Files	
@@ -56,8 +57,15 @@ public class InitialTest {
 
 	@BeforeMethod
 	public void beforeMethod(Method m) {
+		EventFiringWebDriver edriver;
+		CustomListeners listen;
 		driver = DriverManager.getDriverInstance("chrome", 20);
+		/*edriver=new EventFiringWebDriver(driver);
+		listen=new CustomListeners();
+		edriver.register(listen);
+		driver=edriver;*/
 		driver.get(property.getProperty("url"));
+		
 		ExtentTest test = classLevelReport.get().createNode(m.getName());
 		testLevelReport.set(test);
 	}
