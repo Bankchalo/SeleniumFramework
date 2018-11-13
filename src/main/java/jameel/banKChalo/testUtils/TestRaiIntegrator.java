@@ -3,21 +3,25 @@ package jameel.banKChalo.testUtils;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 import org.json.simple.JSONObject;
 import org.testng.IClass;
 import org.testng.ITestResult;
 
-import com.aventstack.extentreports.Status;
-
+import jameel.banKChalo.baseSetup.InitialTest;
+import jameel.banKChalo.customListeners.UseAsTestCaseId;
 import jameel.banKChalo.customListeners.UseAsTestRailId;
 
 public class TestRaiIntegrator {
 	static APIClient client ;
 	static Map<String, Comparable> data = new HashMap<String, Comparable>();
-	static Method testMethod = null;
-	static String TestID = null;
+	static Method testMethod;
+	//static String testRunId;
+	static String testRunId;
+	
+		
 	public static APIClient setUpTestRail()
 	{
 		client = new APIClient("https://bankchalo.testrail.io");
@@ -28,6 +32,7 @@ public class TestRaiIntegrator {
 
 	public static void addStatus(ITestResult result)
 	{
+				
 		IClass obj = result.getTestClass();
 		Class<?> newobj = obj.getRealClass();
 		
@@ -56,15 +61,59 @@ public class TestRaiIntegrator {
 			}
 		}
 			UseAsTestRailId useAsTestName = testMethod.getAnnotation(UseAsTestRailId.class);
-			TestID = Integer.toString(useAsTestName.testRailId());
+			String TestID = Integer.toString(useAsTestName.testRailId());
 			System.out.println("Test Rail ID = " + TestID);
 			//}
 		try {
 			JSONObject r = (JSONObject) client.sendPost("add_result/"+TestID, data);
-		} catch (IOException | APIException e) {
+		} catch
+		(IOException | APIException e) {
 			e.printStackTrace();
 		}
 		
 	}
 	
+	public static void addStatusForCase(ITestResult result)
+	{
+		if(testRunId==null)
+			testRunId=InitialTest.property.getProperty("testRunId");
+	
+		IClass obj = result.getTestClass();
+		Class<?> newobj = obj.getRealClass();
+		
+		try {
+			System.out.println(result.getName());
+			testMethod = newobj.getDeclaredMethod(result.getName(),Hashtable.class);
+		} catch (NoSuchMethodException | SecurityException e) {
+			e.printStackTrace();
+		}
+		if (testMethod.isAnnotationPresent(UseAsTestCaseId.class)) {
+			if(result.getStatus() == ITestResult.SUCCESS)
+			{
+				
+				data.put("status_id", new Integer(1));
+				data.put("comment", "Automated Test Run Result is as Expected");
+			}
+			else if(result.getStatus() == ITestResult.FAILURE)
+			{
+				data.put("status_id", new Integer(5));
+				data.put("comment", "Automated Test Run Result is not as Expected");
+			}
+			else if(result.getStatus() == ITestResult.SKIP)
+			{
+				data.put("status_id", new Integer(3));
+				data.put("comment", "This case is not tested");
+			}
+		}
+		UseAsTestCaseId useAsTestName = testMethod.getAnnotation(UseAsTestCaseId.class);
+		String TestCaseID = Integer.toString(useAsTestName.testCaseId());
+		System.out.println("Test Rail ID = " + TestCaseID);
+			//}
+		try {
+			JSONObject r = (JSONObject) client.sendPost("add_result_for_case/"+testRunId+"/"+TestCaseID, data);
+		} catch (IOException | APIException e) {
+			e.printStackTrace();
+		}
+		
+	}
 }

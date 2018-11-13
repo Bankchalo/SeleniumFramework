@@ -3,6 +3,7 @@ package jameel.banKChalo.baseSetup;
 import java.io.FileNotFoundException;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -19,7 +20,6 @@ import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Recordset;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
-import com.google.gson.stream.JsonReader;
 
 import jameel.banKChalo.customListeners.CustomListeners;
 import jameel.banKChalo.testUtils.APIClient;
@@ -28,6 +28,7 @@ import jameel.banKChalo.testUtils.ExtentManager;
 import jameel.banKChalo.testUtils.FiloReader;
 import jameel.banKChalo.testUtils.JSONReader;
 import jameel.banKChalo.testUtils.TestRaiIntegrator;
+import jameel.banKChalo.testUtils.TestUtilities;
 
 @Listeners(CustomListeners.class)
 public class InitialTest {
@@ -36,6 +37,7 @@ public class InitialTest {
 	public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelReport = new ThreadLocal<ExtentTest>();
 	public static APIClient testRail;
+	public static Properties property;
 	JSONReader json = new JSONReader();
 
 	@BeforeSuite
@@ -43,6 +45,7 @@ public class InitialTest {
 		// Load Config Files	
 		extent = ExtentManager.getExtent();
 		testRail=TestRaiIntegrator.setUpTestRail();
+		property=TestUtilities.loadConfigProperties();
 	}
 
 	@BeforeClass
@@ -54,7 +57,7 @@ public class InitialTest {
 	@BeforeMethod
 	public void beforeMethod(Method m) {
 		driver = DriverManager.getDriverInstance("chrome", 20);
-		driver.get("http://newtours.demoaut.com/");
+		driver.get(property.getProperty("url"));
 		ExtentTest test = classLevelReport.get().createNode(m.getName());
 		testLevelReport.set(test);
 	}

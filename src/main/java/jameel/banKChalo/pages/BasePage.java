@@ -1,14 +1,16 @@
 package jameel.banKChalo.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import jameel.banKChalo.baseSetup.InitialTest;
 import jameel.banKChalo.testUtils.DriverManager;
 
-public abstract class BasePage<T>{
+public abstract class BasePage<T> extends InitialTest{
 	
 	public T openPage(Class<T> clazz) {
 		T page=null;
@@ -25,7 +27,8 @@ public abstract class BasePage<T>{
 		wait.until(expected);
 	}
 	
-	public abstract ExpectedCondition getPageLoadCondition();
+	//public abstract ExpectedCondition getPageLoadCondition();
+	
 	
 
 }

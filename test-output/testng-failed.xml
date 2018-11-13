@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [My Suite]">
+  <test thread-count="5" name="My Test(failed)">
     <classes>
       <class name="jameel.banKChalo.tests.MyFirstTest">
         <methods>
           <include name="afterMethod"/>
-<<<<<<< HEAD
-          <include name="loginWithValidCredentialsViral" invocation-numbers="0"/>
-=======
-          <include name="loginWithValidCredentialsViral"/>
->>>>>>> aacce95e35a04c3ad199dca562120bf77d35b678
           <include name="beforeSuite"/>
+          <include name="loginWithValidCredentials" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- My Test(failed) -->
+</suite> <!-- Failed suite [My Suite] -->
