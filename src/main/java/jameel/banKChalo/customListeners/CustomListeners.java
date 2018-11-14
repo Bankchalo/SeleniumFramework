@@ -73,27 +73,26 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	@Override
 	public void afterAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
-		testLevelReport.get().debug("Alert accepted on page"+driver.getTitle());
+		testLevelReport.get().debug("Alert accepted on page "+driver.getTitle());
 	}
 
 
-	@Override
 	public void afterAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
-		testLevelReport.get().debug("Alert accepted on page"+driver.getTitle());
+		testLevelReport.get().debug("Alert rejected on page "+driver.getTitle());
 	}
 
 
 	@Override
 	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] text) {
 		// TODO Auto-generated method stub
-		testLevelReport.get().debug("Entered "+text+" into the text box with xpath "+element.toString());
+		testLevelReport.get().debug("Entered "+text+" into the text box having xpath : "+element.toString().split(":")[2]);
 	}
 
 
 	@Override
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		testLevelReport.get().debug("Clicked on the element having xPath "+element.toString());
+		testLevelReport.get().debug("Clicked on the element having xpath : "+element.toString().split(":")[2]);
 	}
 
 
@@ -156,15 +155,17 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 
 
 	@Override
-	public void beforeChangeValueOf(WebElement arg0, WebDriver arg1, CharSequence[] arg2) {
+	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] text) {
 		// TODO Auto-generated method stub
+		testLevelReport.get().debug("Trying to enter "+text+" into the text box having xpath : "+element.toString().split(":")[2]);
 		
 	}
 
 
 	@Override
-	public void beforeClickOn(WebElement arg0, WebDriver arg1) {
+	public void beforeClickOn(WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
+		testLevelReport.get().debug("Trying to click on the element having xpath : "+element.toString().split(":")[2]);
 		
 	}
 

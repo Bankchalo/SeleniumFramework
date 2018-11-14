@@ -6,6 +6,6 @@ import java.lang.annotation.*;
 @Target(ElementType.METHOD)
 public @interface UseAsTestCaseId
 {
-public int testCaseId() default 0;
+public int[] testCaseId() default 0;
 public String[] tags() default "";
 }

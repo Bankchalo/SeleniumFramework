@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import java.util.Hashtable;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
@@ -35,6 +36,7 @@ import jameel.banKChalo.testUtils.TestUtilities;
 public class InitialTest {
 	public static WebDriver driver;
 	public static ExtentReports extent;
+	
 	public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelReport = new ThreadLocal<ExtentTest>();
 	public static APIClient testRail;
@@ -44,6 +46,7 @@ public class InitialTest {
 	@BeforeSuite
 	public void beforeSuite() {
 		// Load Config Files	
+		
 		extent = ExtentManager.getExtent();
 		testRail=TestRaiIntegrator.setUpTestRail();
 		property=TestUtilities.loadConfigProperties();
@@ -52,22 +55,22 @@ public class InitialTest {
 	@BeforeClass
 	public void beforeClass() {
 		ExtentTest parent = extent.createTest(getClass().getSimpleName());
+		parent.assignCategory("Epic_Level_Report");
 		classLevelReport.set(parent);
 	}
 
 	@BeforeMethod
 	public void beforeMethod(Method m) {
-		EventFiringWebDriver edriver;
-		CustomListeners listen;
-		driver = DriverManager.getDriverInstance("chrome", 20);
-		/*edriver=new EventFiringWebDriver(driver);
-		listen=new CustomListeners();
+		ExtentTest test = classLevelReport.get().createNode(m.getName());
+		test.assignCategory("Test_Level_Report");
+		testLevelReport.set(test);
+		driver = DriverManager.getDriverInstance("chrome", 20);	
+		EventFiringWebDriver edriver=new EventFiringWebDriver(driver);
+		CustomListeners listen=new CustomListeners();
 		edriver.register(listen);
-		driver=edriver;*/
+		driver=edriver;
 		driver.get(property.getProperty("url"));
 		
-		ExtentTest test = classLevelReport.get().createNode(m.getName());
-		testLevelReport.set(test);
 	}
 
 	
