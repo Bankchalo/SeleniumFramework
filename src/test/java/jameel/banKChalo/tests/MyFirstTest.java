@@ -16,7 +16,7 @@ import junit.framework.Assert;
 public class MyFirstTest extends InitialTest{
 
 	@Test(dataProvider="dataProviderOmi")
-	@UseAsTestCaseId(testCaseId=11)
+	@UseAsTestCaseId(testCaseId= 11)
 	public void loginWithValidCredentials(Hashtable<String,String> data) {
 		LandingPage lpage = new LandingPage();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));

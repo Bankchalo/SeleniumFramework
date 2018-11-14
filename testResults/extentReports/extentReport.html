@@ -10,13 +10,20 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
 	
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/6d3843c29c354373fafad29c03a1a89b7e06c374/dist/css/extent.css' type='text/css' rel='stylesheet' />
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
 	<title>Ban K Chalo</title>
 
+	<style type='text/css'>
+			
+            
+                
+            
+		
+	</style>
 </head>
 
 	<body class='extent dark default hide-overflow '>
@@ -31,7 +38,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -44,12 +52,12 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 11, 2018 08:29:30 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 14, 2018 09:51:24 PM</span>
 				</a>
 			</li>
 			<li>
                 <a href='#!'>
-                    <span class='label blue darken-3'>v3.0.6</span>
+                    <span class='label blue darken-3'>3.1.5</span>
 				</a>
 			</li>
 		</ul>
@@ -78,6 +86,17 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Epic_Level_Report</a></li>
+					<li><a href='#'>Test_Level_Report</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -157,23 +176,29 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>MyFirstTest</span>
-						<span class='test-time'>Nov 11, 2018 08:29:30 PM</span>
+						<span class='test-time'>Nov 14, 2018 09:51:24 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 11, 2018 08:29:30 PM</span>
-	<span class='label end-time'>Nov 11, 2018 08:30:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+21ms</span>
+	<span class='label start-time'>Nov 14, 2018 09:51:24 PM</span>
+	<span class='label end-time'>Nov 14, 2018 09:52:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 58s+889ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Epic_Level_Report</span>
+			</div>
+	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>loginWithValidCredentials</div>						
-						<span class='node-time'>Nov 11, 2018 08:29:39 PM</span>
-						<span class='node-duration'>0h 0m 6s+767ms</span>
+						<h5 class='node-name'>loginWithValidCredentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 14, 2018 09:51:54 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 28s+571ms</span>
 						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Test_Level_Report</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -186,25 +211,95 @@
 											</tr>
 										</thead>
 										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:35 PM</td>
+													<td class='step-details'>Navigated to Welcome: Mercury Tours</td>
+												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>8:29:39 PM</td>
+													<td class='timestamp'>9:51:35 PM</td>
 													<td class='step-details'>LOGINWITHVALIDCREDENTIALS Execution Started</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>8:29:46 PM</td>
-													<td class='step-details'><details><summary><b><font color=red>Exception Occured:Click to see </summary></font></b >class junit.framework.AssertionFailedError<br><a href =screenshots/failed_screen.png target="_blank"><img src ="screenshots/failed_screen" height="100" width ="150"/></a></details></td>
+													<td class='timestamp'>9:51:35 PM</td>
+													<td class='step-details'>Trying to enter [Ljava.lang.CharSequence;@4a9cc6cb into the text box having xpath :  userName]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:35 PM</td>
+													<td class='step-details'>Entered [Ljava.lang.CharSequence;@4a9cc6cb into the text box having xpath :  userName]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:35 PM</td>
+													<td class='step-details'>Trying to enter [Ljava.lang.CharSequence;@5990e6c5 into the text box having xpath :  password]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:35 PM</td>
+													<td class='step-details'>Entered [Ljava.lang.CharSequence;@5990e6c5 into the text box having xpath :  password]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:35 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='login']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:50 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='login']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:50 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='tripType' and @value='oneway']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:50 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='tripType' and @value='oneway']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:50 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='servClass' and @value='Business']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:51 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='servClass' and @value='Business']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:51 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='findFlights']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:52 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='findFlights']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:52 PM</td>
+													<td class='step-details'><details><summary><b><font color=red>Exception Occured:Click to see </summary></font></b >class junit.framework.AssertionFailedError<br><a href =screenshots/failed_screen.png target="_blank"><img src ="screenshots/failed_screen.png" height="100" width ="150"/></a></details></td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>8:29:46 PM</td>
+													<td class='timestamp'>9:51:52 PM</td>
 													<td class='step-details'>LOGINWITHVALIDCREDENTIALS Execution Ended</td>
 												</tr>
 												<tr class='log' status='fail'>
 													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>8:29:46 PM</td>
+													<td class='timestamp'>9:51:52 PM</td>
 													<td class='step-details'>FAILED</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:51:54 PM</td>
+													<td class='step-details'>The test case having test case id 11 is executed successfully in the test Rail</td>
 												</tr>
 										</tbody>
 									</table>
@@ -213,10 +308,11 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
-						<div class='node-name'>loginWithValidCredentialsViral</div>						
-						<span class='node-time'>Nov 11, 2018 08:29:56 PM</span>
-						<span class='node-duration'>0h 0m 6s+605ms</span>
+						<h5 class='node-name'>loginWithValidCredentialsViral</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 14, 2018 09:52:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 27s+532ms</span>
 						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Test_Level_Report</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -229,20 +325,90 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>8:29:56 PM</td>
-													<td class='step-details'>LOGINWITHVALIDCREDENTIALSVIRAL Execution Started</td>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:02 PM</td>
+													<td class='step-details'>Navigated to Welcome: Mercury Tours</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>8:30:02 PM</td>
+													<td class='timestamp'>9:52:02 PM</td>
+													<td class='step-details'>LOGINWITHVALIDCREDENTIALSVIRAL Execution Started</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:02 PM</td>
+													<td class='step-details'>Trying to enter [Ljava.lang.CharSequence;@3044e9c7 into the text box having xpath :  userName]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:02 PM</td>
+													<td class='step-details'>Entered [Ljava.lang.CharSequence;@3044e9c7 into the text box having xpath :  userName]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:02 PM</td>
+													<td class='step-details'>Trying to enter [Ljava.lang.CharSequence;@41d7b27f into the text box having xpath :  password]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:02 PM</td>
+													<td class='step-details'>Entered [Ljava.lang.CharSequence;@41d7b27f into the text box having xpath :  password]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:02 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='login']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:20 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='login']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:21 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='tripType' and @value='oneway']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:21 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='tripType' and @value='oneway']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:21 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='servClass' and @value='Business']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:21 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='servClass' and @value='Business']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:21 PM</td>
+													<td class='step-details'>Trying to click on the element having xpath :  //input[@name='findFlights']]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:22 PM</td>
+													<td class='step-details'>Clicked on the element having xpath :  //input[@name='findFlights']]</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:52:22 PM</td>
 													<td class='step-details'>LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>8:30:02 PM</td>
+													<td class='timestamp'>9:52:22 PM</td>
 													<td class='step-details'>PASSED</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:52:23 PM</td>
+													<td class='step-details'>The test case having test case id 10 is executed successfully in the test Rail</td>
 												</tr>
 										</tbody>
 									</table>
@@ -277,6 +443,116 @@
 
 </div>
 <!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Epic_Level_Report</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2018 09:51:24 PM</td>
+										<td class='linked' test-id='1'>MyFirstTest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Test_Level_Report</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2018 09:51:25 PM</td>
+										<td class='linked' test-id='2'>MyFirstTest.loginWithValidCredentials</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2018 09:51:56 PM</td>
+										<td class='linked' test-id='3'>MyFirstTest.loginWithValidCredentialsViral</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
 <!-- category view -->
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
@@ -299,23 +575,23 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 11, 2018 08:29:30 PM</div>
+					<div class='panel-lead'>Nov 14, 2018 09:51:24 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 11, 2018 08:30:05 PM</div>
+			 		<div class='panel-lead'>Nov 14, 2018 09:52:24 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>34,482ms</div>
+					<div class='panel-lead'>0h 1m 0s+46ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
-				<div class='card-panel environment'>
+				<div class='card-panel dashboard-environment'>
 					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
 					
 					<table>
@@ -327,6 +603,39 @@
 								<td>Owner</td>
 								<td>Jameel</td>
 							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>Epic_Level_Report</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>Test_Level_Report</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									50%
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -355,7 +664,7 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 4,
-				exceptionsChild: 2,
+				exceptionsChild: 30,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
@@ -368,9 +677,19 @@
 			};
 		</script>
 		
-			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/5ed7b0c339b51aa347b44ccaa2e2ff29905b2f9f/dist/js/extent.js' type='text/javascript'></script>
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
 		
 		
+ 		<script type='text/javascript'>
+ 			
+            
+                $(document).ready(function() {
+                    
+                });
+            
+
+		
+ 		</script>
 	</body>
 	
 </html>
