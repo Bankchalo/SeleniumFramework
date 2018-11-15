@@ -86,13 +86,13 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	@Override
 	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] text) {
 		// TODO Auto-generated method stub
-		testLevelReport.get().debug("Entered "+text+" into the text box having xpath : "+element.toString().split(":")[2]);
+		testLevelReport.get().debug("Entered \""+element.getAttribute("value")+"\" into the text box "+element.toString().split(":")[2].replace("]", ""));
 	}
 
 
 	@Override
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		testLevelReport.get().debug("Clicked on the element having xpath : "+element.toString().split(":")[2]);
+		testLevelReport.get().debug("Clicked on the element having xpath : "+element.toString().split(":")[2].replace("]", ""));
 	}
 
 
@@ -157,7 +157,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	@Override
 	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] text) {
 		// TODO Auto-generated method stub
-		testLevelReport.get().debug("Trying to enter "+text+" into the text box having xpath : "+element.toString().split(":")[2]);
+		testLevelReport.get().debug("Trying to enter text into the text box "+element.toString().split(":")[2].replace("]", ""));
 		
 	}
 
@@ -165,7 +165,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	@Override
 	public void beforeClickOn(WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
-		testLevelReport.get().debug("Trying to click on the element having xpath : "+element.toString().split(":")[2]);
+		testLevelReport.get().debug("Trying to click on the element having xpath : "+element.toString().split(":")[2].replace("]", ""));
 		
 	}
 

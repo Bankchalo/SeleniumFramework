@@ -24,6 +24,25 @@ public class JSONReader {
 	/*public static void main(String[] args) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
 		System.out.println(getData("C:\\Users\\VIRAL\\git\\SeleniumFramework\\resources\\test data\\Sample.json","iPhone"));
 	}*/
+	static JsonParser parser = new JsonParser();
+	static JsonObject obj;
+	
+	public static JsonObject readJson(String path) {
+		try {
+			obj =parser.parse(new FileReader(path)).getAsJsonObject();
+		} catch (JsonIOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JsonSyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//JsonArray arr =(JsonArray)obj.get("Classes");
+		return obj;
+	}
 	
 	public  Object[][] getData(String Json_Path) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
 		JsonParser jsonParser= new JsonParser();
