@@ -30,25 +30,9 @@ import com.google.gson.JsonSyntaxException;
 
 public class DynamicRunner {
 	
-	static JsonParser parser = new JsonParser();
-	static JsonObject obj;
+	
 	//JsonObject obj =
-	public static JsonArray readJson() {
-		try {
-			obj =parser.parse(new FileReader(Constants.getRunnerJsonPath())).getAsJsonObject();
-		} catch (JsonIOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (JsonSyntaxException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		JsonArray arr =(JsonArray)obj.get("Classes");
-		return arr;
-	}
+	
 	
 	/*public static void main(String[] args) {
 		//JsonArray arr=readJson();
@@ -56,9 +40,9 @@ public class DynamicRunner {
 	}*/
 	@Test
 	public void createTestRunner() {
-
+		JsonObject obj	=JSONReader.readJson(Constants.getRunnerJsonPath());
+		JsonArray jsonArray =(JsonArray)obj.get("Classes");
 		
-		JsonArray jsonArray	=readJson();
 		//Create a testNG istance to run the testNg.xml
 		TestNG testNG = new TestNG();
 		

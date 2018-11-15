@@ -2,6 +2,8 @@ package jameel.banKChalo.testUtils;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
@@ -10,9 +12,10 @@ import org.json.simple.JSONObject;
 import org.testng.IClass;
 import org.testng.ITestResult;
 
+import com.google.gson.JsonObject;
+
 import jameel.banKChalo.baseSetup.InitialTest;
 import jameel.banKChalo.customListeners.UseAsTestCaseId;
-import jameel.banKChalo.customListeners.UseAsTestRailId;
 
 public class TestRaiIntegrator extends InitialTest{
 	static APIClient client ;
@@ -78,7 +81,8 @@ public class TestRaiIntegrator extends InitialTest{
 		Method testMethod=null;
 		String testRunId=null;
 		if(testRunId==null)
-			testRunId=InitialTest.property.getProperty("testRunId");
+			//testRunId=InitialTest.property.getProperty("testRunId");
+			testRunId=InitialTest.getTestRunId();
 	
 		IClass obj = result.getTestClass();
 		Class<?> newobj = obj.getRealClass();
@@ -110,7 +114,7 @@ public class TestRaiIntegrator extends InitialTest{
 			for(int caseId:useAsTestName.testCaseId()) {
 				try {
 					JSONObject r = (JSONObject) client.sendPost("add_result_for_case/"+testRunId+"/"+Integer.toString(caseId), data);
-					testLevelReport.get().debug("The test case having test case id "+caseId+" is executed successfully in the test Rail");
+					testLevelReport.get().info("The test case having test case id "+caseId+" is executed successfully in the test Rail");
 				} catch (IOException | APIException e) {
 					e.printStackTrace();
 				}				
@@ -118,9 +122,31 @@ public class TestRaiIntegrator extends InitialTest{
 			
 			
 		}else {
-			testLevelReport.get().debug("This test case is not executed in the test Rail");
+			testLevelReport.get().info("<font color=yellow>This test case is not executed in the test Rail");
 		}
 		
+		
+	}
+	
+	public static String createTestRun() {
+		JSONObject response=null;
+		Date d = new Date();
+		JsonObject obj	=JSONReader.readJson(Constants.geTestRunnerConfigPath());
+		obj.addProperty("name", obj.get("name").toString().replace("\"", "")+"_"+d.toString());
+		try {
+			response = (JSONObject) client.sendPost("add_run/"+1, obj);
+			
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (APIException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return response.get("id").toString();
 		
 	}
 }

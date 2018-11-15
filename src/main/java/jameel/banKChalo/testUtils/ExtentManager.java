@@ -1,8 +1,12 @@
 package jameel.banKChalo.testUtils;
 
+import java.util.Date;
+
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import jameel.banKChalo.baseSetup.InitialTest;
 
 public class ExtentManager {
 	
@@ -11,12 +15,17 @@ public class ExtentManager {
 	private static String filePath=System.getProperty("user.dir")+"/testResults/extentReports/extentReport.html";
 	
 	public static ExtentReports getExtent() {
+		Date d = new Date();
 		if(extent!=null) {
 			return extent;
 		}else {
 			extent=new ExtentReports();
 			extent.attachReporter(getHtmlReporter());
 			extent.setSystemInfo("Owner", "Jameel");
+			extent.setSystemInfo("Environment",InitialTest.property.getProperty("environment"));
+			extent.setSystemInfo("Platform",InitialTest.property.getProperty("platform"));
+			extent.setSystemInfo("Run_Date",d.toString());
+			
 			extent.setAnalysisStrategy(AnalysisStrategy.TEST);
 			return extent;
 		}

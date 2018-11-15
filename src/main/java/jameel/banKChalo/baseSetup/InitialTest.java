@@ -36,7 +36,7 @@ import jameel.banKChalo.testUtils.TestUtilities;
 public class InitialTest {
 	public static WebDriver driver;
 	public static ExtentReports extent;
-	
+	private static String testRunId;
 	public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelReport = new ThreadLocal<ExtentTest>();
 	public static APIClient testRail;
@@ -46,10 +46,11 @@ public class InitialTest {
 	@BeforeSuite
 	public void beforeSuite() {
 		// Load Config Files	
-		
+		property=TestUtilities.loadConfigProperties();
 		extent = ExtentManager.getExtent();
 		testRail=TestRaiIntegrator.setUpTestRail();
-		property=TestUtilities.loadConfigProperties();
+		testRunId=TestRaiIntegrator.createTestRun();
+		
 	}
 
 	@BeforeClass
@@ -116,6 +117,10 @@ public class InitialTest {
 	@DataProvider(name = "dataProviderViral")
 	public Object[][] dataProvider(Method m) throws JsonIOException, JsonSyntaxException, FileNotFoundException{
 		return json.getData(System.getProperty("user.dir")+"/resources/jsonFiles/"+m.getDeclaringClass().getName().toString().split("\\.")[3]+"/"+m.getName().toString()+".json");
-}
+	}
+	
+	public static String getTestRunId() {
+		return testRunId;
+	}
 
 }
