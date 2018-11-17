@@ -1,3 +1,14 @@
+/**
+ * ClassName :- CustomListeners
+ * This class implements the listeners that will be called on certain actions
+ * 
+ * Created By 	:- Umesh Joshi/Viral Singh
+ * Created Date :- 17-Nov 2018
+ * Modified By 	:- 
+ * Modified Date:- 
+ *
+ */
+
 package jameel.banKChalo.customListeners;
 
 import org.openqa.selenium.By;
@@ -11,7 +22,8 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.Status;
 
 import jameel.banKChalo.baseSetup.InitialTest;
-import jameel.banKChalo.testUtils.TestRaiIntegrator;
+
+import jameel.banKChalo.testUtils.TestRailIntegrator;
 import jameel.banKChalo.testUtils.TestUtilities;
 
 public class CustomListeners extends InitialTest implements ITestListener,WebDriverEventListener {
@@ -25,7 +37,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void onTestSuccess(ITestResult result) {
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.PASS, "PASSED");
-		TestRaiIntegrator.addStatusForCase(result);
+		TestRailIntegrator.addStatusForCase(result);
 		logger.info(result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 	}
 
@@ -43,7 +55,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 						+ "\" height=\"100\" width =\"150\"/></a>" + "</details>");
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.FAIL, "FAILED");
-		TestRaiIntegrator.addStatusForCase(result);
+		TestRailIntegrator.addStatusForCase(result);
 		logger.info(result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 	}
 
@@ -52,7 +64,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 
 		testLevelReport.get().debug(result.getMethod().getMethodName().toUpperCase() + " isSkipped");
 		testLevelReport.get().log(Status.SKIP, "SKIPPED");
-		TestRaiIntegrator.addStatusForCase(result);
+		TestRailIntegrator.addStatusForCase(result);
 		logger.info("result.getMethod().getMethodName().toUpperCase() + \" Execution Ended\"");
 
 	}

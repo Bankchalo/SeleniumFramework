@@ -1,3 +1,14 @@
+/**
+ * ClassName :- BasePage
+ * Initializes page factory of every class
+ * 
+ * Created By 	:- Umesh Joshi/Viral Singh
+ * Created Date :- 17-Nov 2018
+ * Modified By 	:- 
+ * Modified Date:- 
+ *
+ */
+
 package jameel.banKChalo.pages;
 
 import org.openqa.selenium.By;

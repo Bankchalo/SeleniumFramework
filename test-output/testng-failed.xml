@@ -5,11 +5,13 @@
     <classes>
       <class name="jameel.banKChalo.tests.MyFirstTest">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeSuite"/>
+          <include name="killClass"/>
+          <include name="setUpResources"/>
           <include name="loginWithValidCredentials" invocation-numbers="0"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
+          <include name="killResources"/>
+          <include name="killMethod"/>
+          <include name="startClass"/>
+          <include name="startMethod"/>
         </methods>
       </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
     </classes>

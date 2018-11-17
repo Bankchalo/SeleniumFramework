@@ -1,3 +1,13 @@
+/**
+ * ClassName :- JSONReader
+ * Loads the Json Files to load data from JSON
+ * 
+ * Created By 	:- Umesh Joshi/Viral Singh
+ * Created Date :- 17-Nov 2018
+ * Modified By 	:- 
+ * Modified Date:- 
+ *
+ */
 package jameel.banKChalo.testUtils;
 
 import java.io.FileNotFoundException;

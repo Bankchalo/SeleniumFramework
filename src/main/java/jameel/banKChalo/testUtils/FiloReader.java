@@ -1,3 +1,14 @@
+/**
+ * ClassName :- FiloReader
+ * Initializes Fillo to retrive the data from excel using sql commands
+ * 
+ * Created By 	:- Umesh Joshi/Viral Singh
+ * Created Date :- 17-Nov 2018
+ * Modified By 	:- 
+ * Modified Date:- 
+ *
+ */
+
 package jameel.banKChalo.testUtils;
 
 import com.codoid.products.exception.FilloException;

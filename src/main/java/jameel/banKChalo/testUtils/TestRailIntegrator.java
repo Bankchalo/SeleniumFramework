@@ -1,3 +1,13 @@
+/**
+ * ClassName :- TestRailIntegrator
+ * This class is responsible for setting up test Rail Connection and performing execution on test Rail.
+ * 
+ * Created By 	:- Umesh Joshi/Viral Singh
+ * Created Date :- 17-Nov 2018
+ * Modified By	:-
+ * Modified Date:-
+ *
+ */
 package jameel.banKChalo.testUtils;
 
 import java.io.IOException;
@@ -17,7 +27,7 @@ import com.google.gson.JsonObject;
 import jameel.banKChalo.baseSetup.InitialTest;
 import jameel.banKChalo.customListeners.UseAsTestCaseId;
 
-public class TestRaiIntegrator extends InitialTest{
+public class TestRailIntegrator extends InitialTest{
 	static APIClient client ;
 	static Map<String, Comparable> data = new HashMap<String, Comparable>();
 	
