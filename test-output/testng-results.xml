@@ -1,157 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My Suite" duration-ms="30766" started-at="2018-11-15T16:15:58Z" finished-at="2018-11-15T16:16:28Z">
+  <suite name="Default suite" duration-ms="38876" started-at="2018-11-17T04:24:30Z" finished-at="2018-11-17T04:25:09Z">
     <groups>
     </groups>
-    <test name="My Test" duration-ms="30766" started-at="2018-11-15T16:15:58Z" finished-at="2018-11-15T16:16:28Z">
-      <class name="jameel.banKChalo.tests.MyFirstTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="beforeSuite" is-config="true" duration-ms="2328" started-at="2018-11-15T16:15:55Z" finished-at="2018-11-15T16:15:58Z">
+    <test name="Default test" duration-ms="38876" started-at="2018-11-17T04:24:30Z" finished-at="2018-11-17T04:25:09Z">
+      <class name="jameel.banKChalo.testUtils.DynamicRunner">
+        <test-method status="PASS" signature="createTestRunner()[pri:0, instance:jameel.banKChalo.testUtils.DynamicRunner@60285225]" name="createTestRunner" duration-ms="38845" started-at="2018-11-17T04:24:30Z" finished-at="2018-11-17T04:25:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="beforeClass" is-config="true" duration-ms="16" started-at="2018-11-15T16:15:58Z" finished-at="2018-11-15T16:15:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="6656" started-at="2018-11-15T16:15:59Z" finished-at="2018-11-15T16:16:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentials(java.util.Hashtable)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="loginWithValidCredentials" duration-ms="6502" started-at="2018-11-15T16:16:05Z" data-provider="dataProviderOmi" finished-at="2018-11-15T16:16:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{TC_ID=loginWithValidCredentials, TRIP_TYPE=OneWay, USERNAME=mercury, SERVICE_CLASS=Business, PASSWORD=mercury}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="junit.framework.AssertionFailedError">
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.fail(Assert.java:53)
-at jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentials(MyFirstTest.java:26)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at jameel.banKChalo.testUtils.DynamicRunner.createTestRunner(DynamicRunner.java:127)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="1235" started-at="2018-11-15T16:16:13Z" finished-at="2018-11-15T16:16:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentials(java.util.Hashtable)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidCredentials status=FAILURE method=MyFirstTest.loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="6094" started-at="2018-11-15T16:16:15Z" finished-at="2018-11-15T16:16:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.Hashtable)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="loginWithValidCredentialsViral" duration-ms="6010" started-at="2018-11-15T16:16:21Z" data-provider="dataProviderOmi" finished-at="2018-11-15T16:16:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{TC_ID=loginWithValidCredentialsViral, TRIP_TYPE=OneWay, USERNAME=mercury, SERVICE_CLASS=Business, PASSWORD=mercury}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentialsViral -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="797" started-at="2018-11-15T16:16:28Z" finished-at="2018-11-15T16:16:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void jameel.banKChalo.tests.MyFirstTest.loginWithValidCredentialsViral(java.util.Hashtable)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@1da51a35] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
-    </test> <!-- My Test -->
-  </suite> <!-- My Suite -->
+        </test-method> <!-- createTestRunner -->
+      </class> <!-- jameel.banKChalo.testUtils.DynamicRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

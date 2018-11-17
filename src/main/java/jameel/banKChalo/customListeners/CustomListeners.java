@@ -18,6 +18,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 
 	public void onTestStart(ITestResult result) {
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Started");
+		logger.info(result.getMethod().getMethodName().toUpperCase() + " Execution Started");
 	}
 
 
@@ -25,6 +26,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.PASS, "PASSED");
 		TestRaiIntegrator.addStatusForCase(result);
+		logger.info(result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -42,7 +44,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 		testLevelReport.get().log(Status.INFO, result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 		testLevelReport.get().log(Status.FAIL, "FAILED");
 		TestRaiIntegrator.addStatusForCase(result);
-
+		logger.info(result.getMethod().getMethodName().toUpperCase() + " Execution Ended");
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -51,6 +53,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 		testLevelReport.get().debug(result.getMethod().getMethodName().toUpperCase() + " isSkipped");
 		testLevelReport.get().log(Status.SKIP, "SKIPPED");
 		TestRaiIntegrator.addStatusForCase(result);
+		logger.info("result.getMethod().getMethodName().toUpperCase() + \" Execution Ended\"");
 
 	}
 
@@ -74,12 +77,14 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void afterAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Alert accepted on page "+driver.getTitle());
+		logger.info("Alert accepted on page "+driver.getTitle());
 	}
 
 
 	public void afterAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Alert rejected on page "+driver.getTitle());
+		logger.info("Alert rejected on page "+driver.getTitle());
 	}
 
 
@@ -87,12 +92,14 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] text) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Entered \""+element.getAttribute("value")+"\" into the text box "+element.toString().split(":")[2].replace("]", ""));
+		logger.info("Entered \""+element.getAttribute("value")+" into the text box "+element.toString().split(":")[2].replace("]", ""));
 	}
 
 
 	@Override
 	public void afterClickOn(WebElement element, WebDriver driver) {
 		testLevelReport.get().debug("Clicked on the element having xpath : "+element.toString().split(":")[2].replace("]", ""));
+		logger.info("Clicked on the element having xpath : "+element.toString().split(":")[2].replace("]", ""));
 	}
 
 
@@ -107,6 +114,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void afterNavigateBack(WebDriver driver) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Navigated back to "+driver.getTitle());
+		logger.info("Navigated back to "+driver.getTitle());
 		
 	}
 
@@ -115,7 +123,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void afterNavigateForward(WebDriver driver) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Navigated to "+driver.getTitle());
-		
+		logger.info("Navigated to "+driver.getTitle());
 	}
 
 
@@ -123,6 +131,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void afterNavigateRefresh(WebDriver driver) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug(driver.getTitle()+" Page refreshed");
+		logger.info(driver.getTitle()+" Page refreshed");
 	}
 
 
@@ -130,6 +139,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void afterNavigateTo(String arg0, WebDriver driver) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Navigated to "+driver.getTitle());
+		logger.info("Navigated to "+driver.getTitle());
 	}
 
 
@@ -158,7 +168,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] text) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Trying to enter text into the text box "+element.toString().split(":")[2].replace("]", ""));
-		
+		logger.info("Trying to enter text into the text box "+element.toString().split(":")[2].replace("]", ""));
 	}
 
 
@@ -166,7 +176,7 @@ public class CustomListeners extends InitialTest implements ITestListener,WebDri
 	public void beforeClickOn(WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
 		testLevelReport.get().debug("Trying to click on the element having xpath : "+element.toString().split(":")[2].replace("]", ""));
-		
+		logger.info("Trying to click on the element having xpath : "+element.toString().split(":")[2].replace("]", ""));
 	}
 
 
