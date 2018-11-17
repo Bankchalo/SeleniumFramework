@@ -6,6 +6,7 @@ import java.util.Hashtable;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
@@ -20,6 +21,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Recordset;
+import com.gargoylesoftware.htmlunit.javascript.host.event.EventHandler;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
@@ -42,6 +44,8 @@ public class InitialTest {
 	public static APIClient testRail;
 	public static Properties property;
 	JSONReader json = new JSONReader();
+	public static Logger logger;
+	private static String className;
 	
 	@BeforeSuite
 	public void beforeSuite() {
@@ -57,6 +61,10 @@ public class InitialTest {
 	public void beforeClass() {
 		ExtentTest parent = extent.createTest(getClass().getSimpleName());
 		parent.assignCategory("Epic_Level_Report");
+		className=this.getClass().getSimpleName().toString();
+		logger=Logger.getLogger(className);
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"/resources/propertyFiles/log4j.properties");
+	
 		classLevelReport.set(parent);
 	}
 
@@ -64,6 +72,8 @@ public class InitialTest {
 	public void beforeMethod(Method m) {
 		ExtentTest test = classLevelReport.get().createNode(m.getName());
 		test.assignCategory("Test_Level_Report");
+		logger=Logger.getLogger(className+"---"+m.getName());
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"/resources/propertyFiles/log4j.properties");
 		testLevelReport.set(test);
 		driver = DriverManager.getDriverInstance("chrome", 20);	
 		EventFiringWebDriver edriver=new EventFiringWebDriver(driver);

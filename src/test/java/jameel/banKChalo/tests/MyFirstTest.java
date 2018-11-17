@@ -18,7 +18,7 @@ public class MyFirstTest extends InitialTest{
 	@Test(dataProvider="dataProviderOmi")
 	@UseAsTestCaseId(testCaseId= 11)
 	public void loginWithValidCredentials(Hashtable<String,String> data) {
-		LandingPage lpage = new LandingPage();
+		LandingPage lpage = new LandingPage().open();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
 		hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
@@ -29,7 +29,8 @@ public class MyFirstTest extends InitialTest{
 	@Test(dataProvider="dataProviderOmi")
 	@UseAsTestCaseId(testCaseId=10)
 	public void loginWithValidCredentialsViral(Hashtable<String,String> data) {
-		LandingPage lpage = new LandingPage();
+		
+		LandingPage lpage = new LandingPage().open();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
 		hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));

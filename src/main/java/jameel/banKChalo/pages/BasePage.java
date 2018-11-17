@@ -17,17 +17,19 @@ public abstract class BasePage<T> extends InitialTest{
 		
 		page=PageFactory.initElements(DriverManager.getDriver(), clazz);
 		AjaxElementLocatorFactory elm = new AjaxElementLocatorFactory(DriverManager.getDriver(), 20);
+		//ExpectedCondition condition = ((BasePage)page).getPageLoadCondition();
+		//waitForPageLoadCondition(condition);
 				
 		return page;
 		
 	}
 	
-	public void waitForPageLoadCondition(ExpectedCondition expected) {
+	public static void waitForPageLoadCondition(ExpectedCondition expected) {
 		Wait wait = new WebDriverWait(DriverManager.getDriver(), 10);
 		wait.until(expected);
 	}
 	
-	//public abstract ExpectedCondition getPageLoadCondition();
+	public abstract ExpectedCondition getPageLoadCondition();
 	
 	
 

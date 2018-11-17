@@ -1,6 +1,7 @@
 package jameel.banKChalo.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 
 import jameel.banKChalo.pageElements.FindFlightElements;
 
@@ -11,16 +12,16 @@ public class FindFlight extends FindFlightElements{
 		switch(tripType){
 		
 		case "OneWay":
-			WebElement oneWay=driver.findElement(radOneWayTrip);
-			if(!oneWay.isSelected())
-				oneWay.click();
+			//WebElement oneWay=driver.findElement(radOneWayTrip);
+			if(!radOneWayTrip.isSelected())
+				radOneWayTrip.click();
 				
 			break;			
 			
 		case "Round":
-			WebElement round=driver.findElement(radRoundTrip);
-			if(!round.isSelected())
-				round.click();
+			//WebElement round=driver.findElement(radRoundTrip);
+			if(!radRoundTrip.isSelected())
+				radRoundTrip.click();
 			break;
 	
 		
@@ -34,21 +35,21 @@ public class FindFlight extends FindFlightElements{
 		switch(serviceClass){
 		
 		case "Economy":
-			WebElement ecoClass=driver.findElement(radEconomyClass);
-			if(!ecoClass.isSelected())
-				ecoClass.click();
+			//WebElement ecoClass=driver.findElement(radEconomyClass);
+			if(!radEconomyClass.isSelected())
+				radEconomyClass.click();
 			break;		
 			
 		case "Business":
-			WebElement busClass=driver.findElement(radBusinessClass);
-			if(!busClass.isSelected())
-				busClass.click();
+			//WebElement busClass=driver.findElement(radBusinessClass);
+			if(!radBusinessClass.isSelected())
+				radBusinessClass.click();
 			break;
 			
 		case "First":
-			WebElement firClass=driver.findElement(radFirstClass);
-			if(!firClass.isSelected())
-				firClass.click();
+			//WebElement firClass=driver.findElement(radFirstClass);
+			if(!radFirstClass.isSelected())
+				radFirstClass.click();
 			break;
 		
 		default:
@@ -57,8 +58,14 @@ public class FindFlight extends FindFlightElements{
 	}
 	
 	public SelectFlights findFlights() {
-		driver.findElement(btnFindFlights).click();
-		return new SelectFlights();
+		btnFindFlights.click();
+		return (SelectFlights)openPage(SelectFlights.class);
+	}
+
+	@Override
+	public ExpectedCondition getPageLoadCondition() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
