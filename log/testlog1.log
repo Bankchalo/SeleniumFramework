@@ -56,3 +56,17 @@
 2018-11-17 09:54:58,323 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
 2018-11-17 09:54:58,324 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
 2018-11-17 09:55:08,727 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
+2018-11-17 12:47:27,206 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-17 12:47:27,221 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-17 12:47:50,008 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-17 12:48:03,567 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
+2018-11-17 12:48:03,570 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
+2018-11-17 12:50:22,344 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
+2018-11-17 12:52:44,663 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-17 12:52:44,674 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-17 13:22:06,710 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-17 13:22:06,721 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-17 13:22:21,296 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-17 13:22:29,925 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
+2018-11-17 13:22:29,926 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
+2018-11-17 13:25:17,623 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended

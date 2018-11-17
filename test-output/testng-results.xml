@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38876" started-at="2018-11-17T04:24:30Z" finished-at="2018-11-17T04:25:09Z">
+  <suite name="Default suite" duration-ms="205052" started-at="2018-11-17T07:51:53Z" finished-at="2018-11-17T07:55:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38876" started-at="2018-11-17T04:24:30Z" finished-at="2018-11-17T04:25:09Z">
+    <test name="Default test" duration-ms="205052" started-at="2018-11-17T07:51:53Z" finished-at="2018-11-17T07:55:18Z">
       <class name="jameel.banKChalo.testUtils.DynamicRunner">
-        <test-method status="PASS" signature="createTestRunner()[pri:0, instance:jameel.banKChalo.testUtils.DynamicRunner@60285225]" name="createTestRunner" duration-ms="38845" started-at="2018-11-17T04:24:30Z" finished-at="2018-11-17T04:25:09Z">
+        <test-method status="PASS" signature="createTestRunner()[pri:0, instance:jameel.banKChalo.testUtils.DynamicRunner@60285225]" name="createTestRunner" duration-ms="205005" started-at="2018-11-17T07:51:53Z" finished-at="2018-11-17T07:55:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTestRunner -->

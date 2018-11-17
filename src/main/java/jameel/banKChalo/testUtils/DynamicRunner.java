@@ -1,4 +1,13 @@
-//Do Not Delete this file
+/**
+ * ClassName :- DynamicRunner
+ * This class creates a testng xml file programmatically.
+ * 
+ * Created By 	:- Umesh Joshi/Viral Singh
+ * Created Date :- 17-Nov 2018
+ * Modified By 	:- 
+ * Modified Date:- 
+ *
+ */
 
 package jameel.banKChalo.testUtils;
 
@@ -28,16 +37,11 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 
+import jameel.banKChalo.customListeners.CustomListeners;
+
 public class DynamicRunner {
 	
 	
-	//JsonObject obj =
-	
-	
-	/*public static void main(String[] args) {
-		//JsonArray arr=readJson();
-		createTestRunner();
-	}*/
 	@Test
 	public void createTestRunner() {
 		JsonObject obj	=JSONReader.readJson(Constants.getRunnerJsonPath());
@@ -45,6 +49,8 @@ public class DynamicRunner {
 		
 		//Create a testNG istance to run the testNg.xml
 		TestNG testNG = new TestNG();
+		
+		//testNG.addListener(CustomListeners.class);
 		
 		//Create a XmlSuite instance to create a suite node
 		List<XmlSuite> suites = new ArrayList<>();

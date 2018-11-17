@@ -1,3 +1,13 @@
+/**
+ * ClassName :- ExtentManager
+ * Initializes extent reports for reporting of execution
+ * 
+ * Created By 	:- Umesh Joshi/Viral Singh
+ * Created Date :- 17-Nov 2018
+ * Modified By 	:- 
+ * Modified Date:- 
+ *
+ */
 package jameel.banKChalo.testUtils;
 
 import java.util.Date;
