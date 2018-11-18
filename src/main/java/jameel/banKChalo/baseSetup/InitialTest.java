@@ -55,7 +55,7 @@ import jameel.banKChalo.testUtils.JSONReader;
 import jameel.banKChalo.testUtils.TestRailIntegrator;
 import jameel.banKChalo.testUtils.TestUtilities;
 
-//@Listeners(CustomListeners.class)
+@Listeners(CustomListeners.class)
 public class InitialTest {
 	public static WebDriver driver;
 	public static ExtentReports extent;
