@@ -55,7 +55,7 @@ import jameel.banKChalo.testUtils.JSONReader;
 import jameel.banKChalo.testUtils.TestRailIntegrator;
 import jameel.banKChalo.testUtils.TestUtilities;
 
-@Listeners(CustomListeners.class)
+//@Listeners(CustomListeners.class)
 public class InitialTest {
 	public static WebDriver driver;
 	public static ExtentReports extent;
@@ -113,7 +113,7 @@ public class InitialTest {
 		
 		
 		//Invokes browser
-		driver = DriverManager.getDriverInstance("chrome", 20);
+		driver = DriverManager.getDriverInstance(property.getProperty("browser"), 20);
 		
 		//Embed WebDriver listeners into the driver
 		EventFiringWebDriver edriver = new EventFiringWebDriver(driver);
