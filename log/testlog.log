@@ -118,3 +118,9 @@
 2018-11-18 18:30:23,863 - MyFirstTest---loginWithValidCredentialsViral -INFO - Navigated to Welcome: Mercury Tours
 2018-11-18 18:30:23,863 - MyFirstTest---loginWithValidCredentialsViral -INFO - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
 2018-11-18 18:30:37,215 - MyFirstTest---loginWithValidCredentialsViral -INFO - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
+2018-11-18 19:01:09,736 - MyFirstTest---loginWithValidCredentials -INFO - Navigated to Welcome: Mercury Tours
+2018-11-18 19:01:09,836 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-18 19:01:27,260 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-18 19:01:41,164 - MyFirstTest---loginWithValidCredentialsViral -INFO - Navigated to Welcome: Mercury Tours
+2018-11-18 19:01:41,177 - MyFirstTest---loginWithValidCredentialsViral -INFO - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
+2018-11-18 19:01:49,778 - MyFirstTest---loginWithValidCredentialsViral -INFO - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
