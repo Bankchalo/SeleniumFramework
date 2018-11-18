@@ -21,6 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -62,6 +63,9 @@ public class DriverManager {
 				System.setProperty("webdriver.ie.driver", Constants.getIEPath());
 				setDriver(new InternetExplorerDriver());
 			}
+			else if(browser.equalsIgnoreCase("headless")) {
+				setDriver(new HtmlUnitDriver());
+			}
 
 			else {
 				System.out.println("Please Select a valid browser");
@@ -69,7 +73,7 @@ public class DriverManager {
 			
 
 		}
-		maximizeBrowser();
+		maximizeBrowser(browser);
 		setImplicitWait(time);
 		return getDriver();
 	}
@@ -81,8 +85,9 @@ public class DriverManager {
 		}
 	}
 
-	public static void maximizeBrowser() {
-		driver.get().manage().window().maximize();
+	public static void maximizeBrowser(String browser) {
+		if(!browser.equals("headless"))
+			driver.get().manage().window().maximize();
 
 	}
 

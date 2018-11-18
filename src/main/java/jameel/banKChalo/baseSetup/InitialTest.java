@@ -113,7 +113,7 @@ public class InitialTest {
 		
 		
 		//Invokes browser
-		driver = DriverManager.getDriverInstance("chrome", 20);
+		driver = DriverManager.getDriverInstance(property.getProperty("browser"), 20);
 		
 		//Embed WebDriver listeners into the driver
 		EventFiringWebDriver edriver = new EventFiringWebDriver(driver);

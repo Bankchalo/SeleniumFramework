@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My Suite" duration-ms="75336" started-at="2018-11-18T13:30:35Z" finished-at="2018-11-18T13:31:50Z">
+  <suite name="My Suite" duration-ms="40989" started-at="2018-11-18T15:16:36Z" finished-at="2018-11-18T15:17:17Z">
     <groups>
     </groups>
-    <test name="My Test" duration-ms="75336" started-at="2018-11-18T13:30:35Z" finished-at="2018-11-18T13:31:50Z">
+    <test name="My Test" duration-ms="40989" started-at="2018-11-18T15:16:36Z" finished-at="2018-11-18T15:17:17Z">
       <class name="jameel.banKChalo.tests.MyFirstTest">
-        <test-method status="PASS" signature="setUpResources()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="setUpResources" is-config="true" duration-ms="3045" started-at="2018-11-18T13:30:32Z" finished-at="2018-11-18T13:30:35Z">
+        <test-method status="PASS" signature="setUpResources()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="setUpResources" is-config="true" duration-ms="2291" started-at="2018-11-18T15:16:34Z" finished-at="2018-11-18T15:16:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpResources -->
-        <test-method status="PASS" signature="startClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="startClass" is-config="true" duration-ms="203" started-at="2018-11-18T13:30:35Z" finished-at="2018-11-18T13:30:35Z">
+        <test-method status="PASS" signature="startClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="startClass" is-config="true" duration-ms="94" started-at="2018-11-18T15:16:36Z" finished-at="2018-11-18T15:16:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClass -->
-        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="startMethod" is-config="true" duration-ms="32387" started-at="2018-11-18T13:30:37Z" finished-at="2018-11-18T13:31:09Z">
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="startMethod" is-config="true" duration-ms="13844" started-at="2018-11-18T15:16:37Z" finished-at="2018-11-18T15:16:51Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="FAIL" signature="loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="loginWithValidCredentials" duration-ms="11969" started-at="2018-11-18T13:31:09Z" data-provider="dataProviderOmi" finished-at="2018-11-18T13:31:21Z">
+        <test-method status="FAIL" signature="loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="loginWithValidCredentials" duration-ms="7255" started-at="2018-11-18T15:16:51Z" data-provider="dataProviderOmi" finished-at="2018-11-18T15:16:58Z">
           <params>
             <param index="0">
               <value>
@@ -97,7 +97,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="killMethod" is-config="true" duration-ms="4736" started-at="2018-11-18T13:31:27Z" finished-at="2018-11-18T13:31:32Z">
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="killMethod" is-config="true" duration-ms="2267" started-at="2018-11-18T15:16:58Z" finished-at="2018-11-18T15:17:01Z">
           <params>
             <param index="0">
               <value>
@@ -106,14 +106,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=loginWithValidCredentials status=FAILURE method=MyFirstTest.loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithValidCredentials status=FAILURE method=MyFirstTest.loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killMethod -->
-        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="startMethod" is-config="true" duration-ms="9154" started-at="2018-11-18T13:31:32Z" finished-at="2018-11-18T13:31:41Z">
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="startMethod" is-config="true" duration-ms="9504" started-at="2018-11-18T15:17:01Z" finished-at="2018-11-18T15:17:10Z">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="loginWithValidCredentialsViral" duration-ms="7303" started-at="2018-11-18T13:31:41Z" data-provider="dataProviderOmi" finished-at="2018-11-18T13:31:48Z">
+        <test-method status="PASS" signature="loginWithValidCredentialsViral(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="loginWithValidCredentialsViral" duration-ms="6238" started-at="2018-11-18T15:17:10Z" data-provider="dataProviderOmi" finished-at="2018-11-18T15:17:16Z">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentialsViral -->
-        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="killMethod" is-config="true" duration-ms="970" started-at="2018-11-18T13:31:49Z" finished-at="2018-11-18T13:31:50Z">
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="killMethod" is-config="true" duration-ms="795" started-at="2018-11-18T15:17:16Z" finished-at="2018-11-18T15:17:17Z">
           <params>
             <param index="0">
               <value>
@@ -144,18 +144,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithValidCredentialsViral status=SUCCESS method=MyFirstTest.loginWithValidCredentialsViral(java.util.Hashtable)[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killMethod -->
-        <test-method status="PASS" signature="killClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="killClass" is-config="true" duration-ms="0" started-at="2018-11-18T13:31:50Z" finished-at="2018-11-18T13:31:50Z">
+        <test-method status="PASS" signature="killClass()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="killClass" is-config="true" duration-ms="0" started-at="2018-11-18T15:17:17Z" finished-at="2018-11-18T15:17:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killClass -->
-        <test-method status="PASS" signature="killResources()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@5a4041cc]" name="killResources" is-config="true" duration-ms="0" started-at="2018-11-18T13:31:51Z" finished-at="2018-11-18T13:31:51Z">
+        <test-method status="PASS" signature="killResources()[pri:0, instance:jameel.banKChalo.tests.MyFirstTest@44a3ec6b]" name="killResources" is-config="true" duration-ms="0" started-at="2018-11-18T15:17:17Z" finished-at="2018-11-18T15:17:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killResources -->
