@@ -3,8 +3,7 @@
 <suite name="My Suite">
   <test name="My Test">
     <classes>
-      <class name="jameel.banKChalo.testUtils.DynamicRunner">
-      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
+      <class name="cetera.Automation.testUtils.DynamicRunner"/>
     </classes>
   </test> <!-- My Test -->
 </suite> <!-- My Suite -->

@@ -156,3 +156,27 @@
 2018-11-18 20:45:29,560 [Thread-9] WARN com.gargoylesoftware.htmlunit.DefaultCssErrorHandler - CSS error: 'http://newtours.demoaut.com/' [24:99] Error in declaration. (Invalid token "=". Was expecting one of: <S>, ":".)
 2018-11-18 20:46:51,535 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
 2018-11-18 20:47:10,578 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
+2018-11-19 09:06:14,282 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-19 09:06:14,287 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-19 09:06:30,321 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-19 09:06:36,489 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
+2018-11-19 09:06:36,490 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
+2018-11-19 09:06:44,728 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
+2018-11-19 09:13:05,981 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-19 09:13:05,988 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-19 09:13:23,221 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-19 09:13:29,430 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
+2018-11-19 09:13:29,431 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
+2018-11-19 09:13:47,306 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
+2018-11-19 09:14:46,893 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-19 09:14:46,899 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-19 09:14:59,100 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-19 09:15:05,535 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
+2018-11-19 09:15:05,535 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
+2018-11-19 09:15:13,987 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
+2018-11-19 09:16:13,503 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-19 09:16:13,508 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-19 09:16:23,179 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-19 09:16:29,319 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
+2018-11-19 09:16:29,321 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
+2018-11-19 09:16:35,742 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended

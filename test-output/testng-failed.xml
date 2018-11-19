@@ -3,17 +3,17 @@
 <suite name="Failed suite [My Suite]">
   <test thread-count="5" name="My Test(failed)">
     <classes>
-      <class name="jameel.banKChalo.tests.MyFirstTest">
+      <class name="cetera.Automation.tests.MyFirstTest">
         <methods>
-          <include name="killClass"/>
-          <include name="setUpResources"/>
-          <include name="loginWithValidCredentials" invocation-numbers="0"/>
+          <include name="startMethod"/>
+          <include name="startClass"/>
           <include name="killResources"/>
           <include name="killMethod"/>
-          <include name="startClass"/>
-          <include name="startMethod"/>
+          <include name="setUpResources"/>
+          <include name="killClass"/>
+          <include name="loginWithValidCredentials" invocation-numbers="0"/>
         </methods>
-      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
+      </class> <!-- cetera.Automation.tests.MyFirstTest -->
     </classes>
   </test> <!-- My Test(failed) -->
 </suite> <!-- Failed suite [My Suite] -->

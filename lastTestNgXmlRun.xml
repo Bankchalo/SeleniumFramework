@@ -3,12 +3,12 @@
 <suite name="My Suite">
   <test thread-count="5" name="My Test">
     <classes>
-      <class name="jameel.banKChalo.tests.MyFirstTest">
+      <class name="cetera.Automation.tests.MyFirstTest">
         <methods>
           <include name="loginWithValidCredentials"/>
           <include name="loginWithValidCredentialsViral"/>
         </methods>
-      </class> <!-- jameel.banKChalo.tests.MyFirstTest -->
+      </class> <!-- cetera.Automation.tests.MyFirstTest -->
     </classes>
   </test> <!-- My Test -->
 </suite> <!-- My Suite -->
