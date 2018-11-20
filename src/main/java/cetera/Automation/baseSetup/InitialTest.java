@@ -47,6 +47,7 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
 import cetera.Automation.customListeners.CustomListeners;
+import cetera.Automation.customListeners.WebDriverListeners;
 import cetera.Automation.testUtils.APIClient;
 import cetera.Automation.testUtils.DriverManager;
 import cetera.Automation.testUtils.ExtentManager;
@@ -55,7 +56,7 @@ import cetera.Automation.testUtils.JSONReader;
 import cetera.Automation.testUtils.TestRailIntegrator;
 import cetera.Automation.testUtils.TestUtilities;
 
-@Listeners(CustomListeners.class)
+//@Listeners(CustomListeners.class)
 public class InitialTest {
 	public static WebDriver driver;
 	public static ExtentReports extent;
@@ -116,10 +117,7 @@ public class InitialTest {
 		driver = DriverManager.getDriverInstance(property.getProperty("browser"), 20);
 		
 		//Embed WebDriver listeners into the driver
-		EventFiringWebDriver edriver = new EventFiringWebDriver(driver);
-		CustomListeners listen = new CustomListeners();
-		edriver.register(listen);
-		driver = edriver;
+		
 		driver.get(property.getProperty("url"));
 
 	}

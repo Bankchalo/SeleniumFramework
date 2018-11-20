@@ -226,3 +226,33 @@
 2018-11-20 12:03:35,393 - MyFirstTest---loginWithValidCredentials -INFO - Navigated to Welcome: Mercury Tours
 2018-11-20 12:03:35,394 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Started
 2018-11-20 12:04:23,428 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 15:47:02,051 - MyFirstTest---loginWithInvalidCredentials -INFO - Navigated to Welcome: Mercury Tours
+2018-11-20 15:47:02,070 - MyFirstTest---loginWithInvalidCredentials -INFO - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 15:47:25,569 - MyFirstTest---loginWithInvalidCredentials -INFO - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 15:47:31,916 - MyFirstTest---loginWithValidCredentials -INFO - Navigated to Welcome: Mercury Tours
+2018-11-20 15:47:31,917 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 15:47:42,212 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 16:11:02,542 - MyFirstTest---loginWithInvalidCredentials -INFO - Navigated to Welcome: Mercury Tours
+2018-11-20 16:11:02,548 - MyFirstTest---loginWithInvalidCredentials -INFO - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 16:11:25,716 - MyFirstTest---loginWithInvalidCredentials -INFO - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 16:11:31,955 - MyFirstTest---loginWithValidCredentials -INFO - Navigated to Welcome: Mercury Tours
+2018-11-20 16:11:31,956 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 16:11:37,556 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 16:20:13,635 - MyFirstTest---loginWithInvalidCredentials -INFO - Navigated to Welcome: Mercury Tours
+2018-11-20 16:20:13,643 - MyFirstTest---loginWithInvalidCredentials -INFO - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 16:20:13,689 - MyFirstTest---loginWithInvalidCredentials -INFO - Trying to enter text into the text box  userName
+2018-11-20 16:20:13,755 - MyFirstTest---loginWithInvalidCredentials -INFO - Entered "mercury into the text box  userName
+2018-11-20 16:20:13,770 - MyFirstTest---loginWithInvalidCredentials -INFO - Trying to enter text into the text box  password
+2018-11-20 16:20:13,840 - MyFirstTest---loginWithInvalidCredentials -INFO - Entered "mercur into the text box  password
+2018-11-20 16:20:13,858 - MyFirstTest---loginWithInvalidCredentials -INFO - Trying to click on the element having xpath :  //input[@name='login'
+2018-11-20 16:20:21,189 - MyFirstTest---loginWithInvalidCredentials -INFO - Clicked on the element having xpath :  //input[@name='login'
+2018-11-20 16:20:42,588 - MyFirstTest---loginWithInvalidCredentials -INFO - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 16:20:53,488 - MyFirstTest---loginWithValidCredentials -INFO - Navigated to Welcome: Mercury Tours
+2018-11-20 16:20:53,488 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 16:20:53,509 - MyFirstTest---loginWithValidCredentials -INFO - Trying to enter text into the text box  userName
+2018-11-20 16:20:53,587 - MyFirstTest---loginWithValidCredentials -INFO - Entered "mercury into the text box  userName
+2018-11-20 16:20:53,606 - MyFirstTest---loginWithValidCredentials -INFO - Trying to enter text into the text box  password
+2018-11-20 16:20:53,672 - MyFirstTest---loginWithValidCredentials -INFO - Entered "mercury into the text box  password
+2018-11-20 16:20:53,692 - MyFirstTest---loginWithValidCredentials -INFO - Trying to click on the element having xpath :  //input[@name='login'
+2018-11-20 16:21:17,557 - MyFirstTest---loginWithValidCredentials -INFO - Clicked on the element having xpath :  //input[@name='login'
+2018-11-20 16:21:19,267 - MyFirstTest---loginWithValidCredentials -INFO - LOGINWITHVALIDCREDENTIALS Execution Ended

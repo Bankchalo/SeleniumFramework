@@ -56,6 +56,8 @@ public class DynamicRunner {
 		List<XmlSuite> suites = new ArrayList<>();
 		XmlSuite suite = new XmlSuite();
 		suite.setName("My Suite");
+		suite.addListener("cetera.Automation.customListeners.CustomListeners");
+		//suite.addListener("cetera.Automation.customListeners.WebDriverListeners");
 		
 		//suite.setFileName("Sample");
 		

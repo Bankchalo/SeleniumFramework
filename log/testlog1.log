@@ -226,3 +226,33 @@
 2018-11-20 12:03:35,393 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
 2018-11-20 12:03:35,394 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
 2018-11-20 12:04:23,428 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 15:47:02,051 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 15:47:02,070 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 15:47:25,569 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 15:47:31,916 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 15:47:31,917 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 15:47:42,212 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 16:11:02,542 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 16:11:02,548 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 16:11:25,716 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 16:11:31,955 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 16:11:31,956 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 16:11:37,556 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 16:20:13,635 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 16:20:13,643 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 16:20:13,689 [main] INFO MyFirstTest---loginWithInvalidCredentials - Trying to enter text into the text box  userName
+2018-11-20 16:20:13,755 [main] INFO MyFirstTest---loginWithInvalidCredentials - Entered "mercury into the text box  userName
+2018-11-20 16:20:13,770 [main] INFO MyFirstTest---loginWithInvalidCredentials - Trying to enter text into the text box  password
+2018-11-20 16:20:13,840 [main] INFO MyFirstTest---loginWithInvalidCredentials - Entered "mercur into the text box  password
+2018-11-20 16:20:13,858 [main] INFO MyFirstTest---loginWithInvalidCredentials - Trying to click on the element having xpath :  //input[@name='login'
+2018-11-20 16:20:21,189 [main] INFO MyFirstTest---loginWithInvalidCredentials - Clicked on the element having xpath :  //input[@name='login'
+2018-11-20 16:20:42,588 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 16:20:53,488 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 16:20:53,488 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 16:20:53,509 [main] INFO MyFirstTest---loginWithValidCredentials - Trying to enter text into the text box  userName
+2018-11-20 16:20:53,587 [main] INFO MyFirstTest---loginWithValidCredentials - Entered "mercury into the text box  userName
+2018-11-20 16:20:53,606 [main] INFO MyFirstTest---loginWithValidCredentials - Trying to enter text into the text box  password
+2018-11-20 16:20:53,672 [main] INFO MyFirstTest---loginWithValidCredentials - Entered "mercury into the text box  password
+2018-11-20 16:20:53,692 [main] INFO MyFirstTest---loginWithValidCredentials - Trying to click on the element having xpath :  //input[@name='login'
+2018-11-20 16:21:17,557 [main] INFO MyFirstTest---loginWithValidCredentials - Clicked on the element having xpath :  //input[@name='login'
+2018-11-20 16:21:19,267 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended

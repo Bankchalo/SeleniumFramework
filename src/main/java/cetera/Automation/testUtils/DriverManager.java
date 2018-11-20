@@ -15,11 +15,8 @@ package cetera.Automation.testUtils;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -73,6 +70,10 @@ public class DriverManager {
 			
 
 		}
+		EventFiringWebDriver edriver = new EventFiringWebDriver(driver.get());
+		CustomListeners listen = new CustomListeners();
+		edriver.register(listen);
+		setDriver(edriver);
 		maximizeBrowser(browser);
 		setImplicitWait(time);
 		return getDriver();
