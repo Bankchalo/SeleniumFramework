@@ -6,12 +6,12 @@
       <class name="cetera.Automation.tests.MyFirstTest">
         <methods>
           <include name="startMethod"/>
+          <include name="loginWithInvalidCredentials" invocation-numbers="0"/>
           <include name="startClass"/>
           <include name="killResources"/>
           <include name="killMethod"/>
           <include name="setUpResources"/>
           <include name="killClass"/>
-          <include name="loginWithValidCredentials" invocation-numbers="0"/>
         </methods>
       </class> <!-- cetera.Automation.tests.MyFirstTest -->
     </classes>

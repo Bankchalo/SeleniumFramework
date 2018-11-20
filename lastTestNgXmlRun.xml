@@ -6,7 +6,7 @@
       <class name="cetera.Automation.tests.MyFirstTest">
         <methods>
           <include name="loginWithValidCredentials"/>
-          <include name="loginWithValidCredentialsViral"/>
+          <include name="loginWithInvalidCredentials"/>
         </methods>
       </class> <!-- cetera.Automation.tests.MyFirstTest -->
     </classes>

@@ -7,6 +7,10 @@ import cetera.Automation.pageElements.FindFlightElements;
 
 public class FindFlight extends FindFlightElements{
 	
+	public boolean validateLoginSuccess() {
+		return isElementPresent(signOffButton);
+	}
+	
 	public void selectTripType(String tripType) {
 		
 		switch(tripType){

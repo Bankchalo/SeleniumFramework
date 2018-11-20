@@ -45,5 +45,8 @@ public abstract class FindFlightElements extends BasePage{
 	
 	@FindBy(xpath="//input[@name='findFlights']")
 	protected WebElement btnFindFlights;
+	
+	@FindBy(linkText="SIGN-OFF")
+	protected WebElement signOffButton;
 
 }

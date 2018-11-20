@@ -180,3 +180,49 @@
 2018-11-19 09:16:29,319 [main] INFO MyFirstTest---loginWithValidCredentialsViral - Navigated to Welcome: Mercury Tours
 2018-11-19 09:16:29,321 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Started
 2018-11-19 09:16:35,742 [main] INFO MyFirstTest---loginWithValidCredentialsViral - LOGINWITHVALIDCREDENTIALSVIRAL Execution Ended
+2018-11-19 12:43:06,903 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-19 12:43:06,947 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 11:33:06,233 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:33:06,239 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 11:33:21,233 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 11:33:22,553 [main] INFO MyFirstTest---loginWithValidCredentials - result.getMethod().getMethodName().toUpperCase() + " Execution Ended"
+2018-11-20 11:34:10,343 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:34:10,350 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 11:34:42,529 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 11:34:43,828 [main] INFO MyFirstTest---loginWithValidCredentials - result.getMethod().getMethodName().toUpperCase() + " Execution Ended"
+2018-11-20 11:36:06,885 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:36:06,891 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 11:37:15,253 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 11:37:16,647 [main] INFO MyFirstTest---loginWithValidCredentials - result.getMethod().getMethodName().toUpperCase() + " Execution Ended"
+2018-11-20 11:43:32,753 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:43:32,759 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 11:44:35,550 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 11:44:42,072 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:44:42,073 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 11:45:01,568 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 11:46:51,347 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:46:51,353 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 11:48:59,712 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:48:59,716 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 11:49:22,796 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 11:49:29,374 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:49:29,375 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 11:50:44,935 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 11:53:52,428 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:53:52,433 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 11:54:15,478 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 11:54:21,679 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:54:21,679 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 11:54:56,270 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 11:58:26,765 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:58:26,770 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 11:58:49,915 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 11:59:11,569 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 11:59:11,570 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 12:00:44,443 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-20 12:03:06,034 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 12:03:06,040 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-20 12:03:29,155 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-20 12:03:35,393 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-20 12:03:35,394 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-20 12:04:23,428 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended

@@ -1,5 +1,5 @@
 {
 	"name": "Automated Suite",
 	"include_all": false,
-	"case_ids": [10,11]
+	"case_ids": [12,13]
 }

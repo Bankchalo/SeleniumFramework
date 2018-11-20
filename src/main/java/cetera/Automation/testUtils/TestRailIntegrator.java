@@ -100,6 +100,7 @@ public class TestRailIntegrator extends InitialTest{
 		try {
 			System.out.println(result.getName());
 			testMethod = newobj.getDeclaredMethod(result.getName(),Hashtable.class);
+			//testMethod=result.getMethod();
 		} catch (NoSuchMethodException | SecurityException e) {
 			e.printStackTrace();
 		}

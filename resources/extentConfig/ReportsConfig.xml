@@ -14,10 +14,10 @@
 		<protocol>https</protocol>
 
 		<!-- title of the document -->
-		<documentTitle>Ban K Chalo</documentTitle>
+		<documentTitle>Advisor and Client Portals</documentTitle>
 
 		<!-- report name - displayed at top-nav -->
-		<reportName>Framework bhai Ban k Chalo</reportName>
+		<reportName>Automation Test Report</reportName>
 
 		<!-- report headline - displayed at top-nav, after reportHeadline -->
 		<reportHeadline>Regression Testing Result</reportHeadline>

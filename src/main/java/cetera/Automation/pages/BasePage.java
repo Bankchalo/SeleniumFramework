@@ -11,7 +11,10 @@
 
 package cetera.Automation.pages;
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -42,6 +45,15 @@ public abstract class BasePage<T> extends InitialTest{
 	
 	public abstract ExpectedCondition getPageLoadCondition();
 	
+	
+	public static boolean isElementPresent(WebElement element) {
+		try {
+			return  element.isDisplayed();
+		}catch(NoSuchElementException ex) {
+			return false;
+		}
+		
+	}
 	
 
 }

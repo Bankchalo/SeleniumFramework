@@ -16,24 +16,25 @@ import junit.framework.Assert;
 public class MyFirstTest extends InitialTest{
 
 	@Test(dataProvider="dataProviderOmi")
-	@UseAsTestCaseId(testCaseId= 11)
+	@UseAsTestCaseId(testCaseId=12)
 	public void loginWithValidCredentials(Hashtable<String,String> data) {
 		LandingPage lpage = new LandingPage().open();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
-		hPage.selectTripType(data.get("TRIP_TYPE"));
+		Assert.assertTrue(hPage.validateLoginSuccess());
+		/*hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
-		SelectFlights sFlight = hPage.findFlights();
-		Assert.fail();
+		SelectFlights sFlight = hPage.findFlights();*/
 	}
 	
 	@Test(dataProvider="dataProviderOmi")
-	@UseAsTestCaseId(testCaseId=10)
-	public void loginWithValidCredentialsViral(Hashtable<String,String> data) {
+	@UseAsTestCaseId(testCaseId=13)
+	public void loginWithInvalidCredentials(Hashtable<String,String> data) {
 		
 		LandingPage lpage = new LandingPage().open();
 		FindFlight hPage = lpage.login(data.get("USERNAME"),data.get("PASSWORD"));
-		hPage.selectTripType(data.get("TRIP_TYPE"));
+		Assert.assertTrue(hPage.validateLoginSuccess());
+		/*hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
-		SelectFlights sFlight = hPage.findFlights();
+		SelectFlights sFlight = hPage.findFlights();*/
 	}
 }

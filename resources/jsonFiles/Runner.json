@@ -9,7 +9,7 @@
 			"isEnabled":true			
 			},
 			{
-			"testCaseName":"loginWithValidCredentialsViral",
+			"testCaseName":"loginWithInvalidCredentials",
 			"isEnabled":true			
 			}
 		]
