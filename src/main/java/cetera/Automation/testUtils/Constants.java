@@ -15,6 +15,8 @@ public class Constants {
 	private static final String CHROME_PATH = System.getProperty("user.dir")+"/resources/executables/chromedriver.exe";
 	private static final String IE_PATH=System.getProperty("user.dir")+"/resources/executables/IEDriver.exe";
 	private static final String FIREFOX_PATH=System.getProperty("user.dir")+"/resources/executables/geckodriver.exe";
+	private static final String CHROME_PATH_MAC=System.getProperty("user.dir")+"/resources/executables/chromedriver";
+	private static final String FIREFOX_PATH_MAC=System.getProperty("user.dir")+"/resources/executables/geckodriver";
 	private static final String CONFIG = System.getProperty("user.dir")+"/resources/propertyFiles/config.properties";
 	private static final String EXTENT_CONFIG_PATH =System.getProperty("user.dir")+"/resources/extentConfig/ReportsConfig.xml";
 	private static final String SCREENSHOT_PATH="./testResults/extentReports/screenshots/";
@@ -32,6 +34,14 @@ public class Constants {
 	
 	public static String getIEPath() {
 		return IE_PATH;
+	}
+	
+	public static String getChromePathMac() {
+		return CHROME_PATH_MAC;
+	}
+	
+	public static String getFirefoxPathMac() {
+		return FIREFOX_PATH_MAC;
 	}
 	
 	public static String getConfigPath() {
