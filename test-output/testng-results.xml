@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My Suite" duration-ms="84275" started-at="2018-11-21T03:30:34Z" finished-at="2018-11-21T03:31:59Z">
+  <suite name="My Suite" duration-ms="43719" started-at="2018-11-22T04:37:53Z" finished-at="2018-11-22T04:38:37Z">
     <groups>
     </groups>
-    <test name="My Test" duration-ms="84275" started-at="2018-11-21T03:30:34Z" finished-at="2018-11-21T03:31:59Z">
+    <test name="My Test" duration-ms="43719" started-at="2018-11-22T04:37:53Z" finished-at="2018-11-22T04:38:37Z">
       <class name="cetera.Automation.tests.MyFirstTest">
-        <test-method status="PASS" signature="setUpResources()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="setUpResources" is-config="true" duration-ms="1964" started-at="2018-11-21T03:30:32Z" finished-at="2018-11-21T03:30:34Z">
+        <test-method status="PASS" signature="setUpResources()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="setUpResources" is-config="true" duration-ms="1891" started-at="2018-11-22T04:37:51Z" finished-at="2018-11-22T04:37:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpResources -->
-        <test-method status="PASS" signature="startClass()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="startClass" is-config="true" duration-ms="109" started-at="2018-11-21T03:30:34Z" finished-at="2018-11-21T03:30:35Z">
+        <test-method status="PASS" signature="startClass()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="startClass" is-config="true" duration-ms="31" started-at="2018-11-22T04:37:53Z" finished-at="2018-11-22T04:37:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClass -->
-        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="startMethod" is-config="true" duration-ms="9421" started-at="2018-11-21T03:30:35Z" finished-at="2018-11-21T03:30:44Z">
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="startMethod" is-config="true" duration-ms="7005" started-at="2018-11-22T04:37:54Z" finished-at="2018-11-22T04:38:01Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="FAIL" signature="loginWithInvalidCredentials(java.util.Hashtable)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="loginWithInvalidCredentials" duration-ms="22845" started-at="2018-11-21T03:30:44Z" data-provider="dataProviderOmi" finished-at="2018-11-21T03:31:07Z">
+        <test-method status="FAIL" signature="loginWithInvalidCredentials(java.util.Hashtable)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="loginWithInvalidCredentials" duration-ms="22010" started-at="2018-11-22T04:38:01Z" data-provider="dataProviderOmi" finished-at="2018-11-22T04:38:23Z">
           <params>
             <param index="0">
               <value>
@@ -44,8 +44,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
 System info: host: 'WKWIN9528828', ip: '10.151.158.84', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\umejoshi\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62355}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
-Session ID: 815ae440016f72f5df763be3b7500a5f
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\umejoshi\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50674}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: a5fb59350dd70095ecd8ae43242a8087
 *** Element info: {Using=link text, value=SIGN-OFF}]]>
             </message>
             <full-stacktrace>
@@ -57,8 +57,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
 System info: host: 'WKWIN9528828', ip: '10.151.158.84', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\umejoshi\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62355}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
-Session ID: 815ae440016f72f5df763be3b7500a5f
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\umejoshi\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50674}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: a5fb59350dd70095ecd8ae43242a8087
 *** Element info: {Using=link text, value=SIGN-OFF}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -146,7 +146,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killMethod" is-config="true" duration-ms="1750" started-at="2018-11-21T03:31:09Z" finished-at="2018-11-21T03:31:10Z">
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killMethod" is-config="true" duration-ms="862" started-at="2018-11-22T04:38:24Z" finished-at="2018-11-22T04:38:25Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +162,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killMethod -->
-        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="startMethod" is-config="true" duration-ms="5629" started-at="2018-11-21T03:31:10Z" finished-at="2018-11-21T03:31:16Z">
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="startMethod" is-config="true" duration-ms="5446" started-at="2018-11-22T04:38:25Z" finished-at="2018-11-22T04:38:31Z">
           <params>
             <param index="0">
               <value>
@@ -173,7 +173,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="loginWithValidCredentials" duration-ms="40261" started-at="2018-11-21T03:31:16Z" data-provider="dataProviderOmi" finished-at="2018-11-21T03:31:56Z">
+        <test-method status="PASS" signature="loginWithValidCredentials(java.util.Hashtable)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="loginWithValidCredentials" duration-ms="4557" started-at="2018-11-22T04:38:31Z" data-provider="dataProviderOmi" finished-at="2018-11-22T04:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -184,7 +184,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killMethod" is-config="true" duration-ms="716" started-at="2018-11-21T03:31:58Z" finished-at="2018-11-21T03:31:59Z">
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killMethod" is-config="true" duration-ms="692" started-at="2018-11-22T04:38:36Z" finished-at="2018-11-22T04:38:37Z">
           <params>
             <param index="0">
               <value>
@@ -200,11 +200,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killMethod -->
-        <test-method status="PASS" signature="killClass()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killClass" is-config="true" duration-ms="0" started-at="2018-11-21T03:31:59Z" finished-at="2018-11-21T03:31:59Z">
+        <test-method status="PASS" signature="killClass()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killClass" is-config="true" duration-ms="0" started-at="2018-11-22T04:38:37Z" finished-at="2018-11-22T04:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killClass -->
-        <test-method status="PASS" signature="killResources()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killResources" is-config="true" duration-ms="0" started-at="2018-11-21T03:31:59Z" finished-at="2018-11-21T03:31:59Z">
+        <test-method status="PASS" signature="killResources()[pri:0, instance:cetera.Automation.tests.MyFirstTest@5d11346a]" name="killResources" is-config="true" duration-ms="0" started-at="2018-11-22T04:38:37Z" finished-at="2018-11-22T04:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killResources -->

@@ -310,3 +310,21 @@
 2018-11-21 09:01:16,743 [main] INFO MyFirstTest---loginWithValidCredentials - Trying to click on the element having xpath :  //input[@name='login'
 2018-11-21 09:01:56,729 [main] INFO MyFirstTest---loginWithValidCredentials - Clicked on the element having xpath :  //input[@name='login'
 2018-11-21 09:01:58,451 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
+2018-11-22 10:08:01,220 [main] INFO MyFirstTest---loginWithInvalidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-22 10:08:01,266 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Started
+2018-11-22 10:08:01,312 [main] INFO MyFirstTest---loginWithInvalidCredentials - Trying to enter text into the text box  userName
+2018-11-22 10:08:01,396 [main] INFO MyFirstTest---loginWithInvalidCredentials - Entered "mercury into the text box  userName
+2018-11-22 10:08:01,415 [main] INFO MyFirstTest---loginWithInvalidCredentials - Trying to enter text into the text box  password
+2018-11-22 10:08:01,477 [main] INFO MyFirstTest---loginWithInvalidCredentials - Entered "mercur into the text box  password
+2018-11-22 10:08:01,494 [main] INFO MyFirstTest---loginWithInvalidCredentials - Trying to click on the element having xpath :  //input[@name='login'
+2018-11-22 10:08:03,090 [main] INFO MyFirstTest---loginWithInvalidCredentials - Clicked on the element having xpath :  //input[@name='login'
+2018-11-22 10:08:24,870 [main] INFO MyFirstTest---loginWithInvalidCredentials - LOGINWITHINVALIDCREDENTIALS Execution Ended
+2018-11-22 10:08:31,180 [main] INFO MyFirstTest---loginWithValidCredentials - Navigated to Welcome: Mercury Tours
+2018-11-22 10:08:31,181 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Started
+2018-11-22 10:08:31,202 [main] INFO MyFirstTest---loginWithValidCredentials - Trying to enter text into the text box  userName
+2018-11-22 10:08:31,286 [main] INFO MyFirstTest---loginWithValidCredentials - Entered "mercury into the text box  userName
+2018-11-22 10:08:31,307 [main] INFO MyFirstTest---loginWithValidCredentials - Trying to enter text into the text box  password
+2018-11-22 10:08:31,381 [main] INFO MyFirstTest---loginWithValidCredentials - Entered "mercury into the text box  password
+2018-11-22 10:08:31,397 [main] INFO MyFirstTest---loginWithValidCredentials - Trying to click on the element having xpath :  //input[@name='login'
+2018-11-22 10:08:35,691 [main] INFO MyFirstTest---loginWithValidCredentials - Clicked on the element having xpath :  //input[@name='login'
+2018-11-22 10:08:36,792 [main] INFO MyFirstTest---loginWithValidCredentials - LOGINWITHVALIDCREDENTIALS Execution Ended
