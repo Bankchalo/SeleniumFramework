@@ -43,7 +43,7 @@ public class ExtentManager {
 	
 	
 	public static ExtentHtmlReporter getHtmlReporter() {
-		System.out.println(filePath);
+		//System.out.println(filePath);
 
 		htmlReporter = new ExtentHtmlReporter(filePath);
 		/*htmlReporter.config().setChartVisibilityOnOpen(true);

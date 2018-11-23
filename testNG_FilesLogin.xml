@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login">
+  <listeners>
+    <listener class-name="cetera.Automation.customListeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Login">
+    <classes>
+      <class name="cetera.Automation.tests.MyFirstTest">
+        <methods>
+          <include name="loginWithValidCredentials"/>
+        </methods>
+      </class> <!-- cetera.Automation.tests.MyFirstTest -->
+    </classes>
+  </test> <!-- Login -->
+</suite> <!-- Login -->

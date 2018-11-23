@@ -24,6 +24,7 @@ public class MyFirstTest extends InitialTest{
 		/*hPage.selectTripType(data.get("TRIP_TYPE"));
 		hPage.selectServiceClass(data.get("SERVICE_CLASS"));
 		SelectFlights sFlight = hPage.findFlights();*/
+		
 	}
 	
 	@Test(dataProvider="dataProviderOmi")

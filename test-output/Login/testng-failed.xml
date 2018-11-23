@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Advisor]">
+<suite name="Failed suite [Login]">
   <listeners>
     <listener class-name="cetera.Automation.customListeners.CustomListeners"/>
   </listeners>
-  <test thread-count="5" name="AdvisorPortal(failed)">
+  <test thread-count="5" name="Login(failed)">
     <classes>
       <class name="cetera.Automation.tests.MyFirstTest">
         <methods>
           <include name="startMethod"/>
-          <include name="loginWithInvalidCredentials" invocation-numbers="0"/>
           <include name="startClass"/>
           <include name="killResources"/>
           <include name="killMethod"/>
           <include name="setUpResources"/>
           <include name="killClass"/>
+          <include name="loginWithValidCredentials" invocation-numbers="0"/>
         </methods>
       </class> <!-- cetera.Automation.tests.MyFirstTest -->
     </classes>
-  </test> <!-- AdvisorPortal(failed) -->
-</suite> <!-- Failed suite [Advisor] -->
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Login] -->

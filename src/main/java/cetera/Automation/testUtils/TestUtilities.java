@@ -35,11 +35,11 @@ public class TestUtilities {
 			File scrFile = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
 			Date d = new Date();
 			String screenshotName = testName + "_" + d.toString().replaceAll("[ :]", "_") + ".png";
-			String absoluteScreenshotPath = Constants.getScreenshotPath() + "failed_screen.png";
+			String absoluteScreenshotPath = Constants.getScreenshotPath() + screenshotName;
 
 			try {
 				FileUtils.copyFile(scrFile, new File(absoluteScreenshotPath));
-				FileUtils.copyFile(scrFile, new File(Constants.getArchivedScreenshotPath() + screenshotName));
+				//FileUtils.copyFile(scrFile, new File(Constants.getArchivedScreenshotPath() + screenshotName));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

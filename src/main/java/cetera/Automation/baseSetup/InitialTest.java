@@ -28,7 +28,7 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -37,7 +37,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -46,8 +45,6 @@ import com.codoid.products.fillo.Recordset;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
-import cetera.Automation.customListeners.CustomListeners;
-import cetera.Automation.customListeners.WebDriverListeners;
 import cetera.Automation.testUtils.APIClient;
 import cetera.Automation.testUtils.DriverManager;
 import cetera.Automation.testUtils.ExtentManager;
@@ -70,7 +67,11 @@ public class InitialTest {
 	private static String className;
 
 	@BeforeSuite
-	public void setUpResources() {
+	public void setUpResources(ITestContext context) {
+		
+		//String suiteName =context.getSuite().getName();
+		
+	
 		// Load Config Files
 		property = TestUtilities.loadConfigProperties();
 		

@@ -1,19 +1,44 @@
 {
-	"Classes":[
+	"Suites": [
 		{
-		"ClassName":"MyFirstTest",
-		"isEnabled":true,
-		"Methods":[
-			{
-			"testCaseName":"loginWithValidCredentials",
-			"isEnabled":true			
-			},
-			{
-			"testCaseName":"loginWithInvalidCredentials",
-			"isEnabled":true			
-			}
-		]
-		
+			"SuiteName": "Login",
+			"TestName":"Login",
+			"Classes": [
+				{
+					"ClassName": "MyFirstTest",
+					"isEnabled": true,
+					"Methods": [
+						{
+							"testCaseName": "loginWithValidCredentials",
+							"isEnabled": true
+						},
+						{
+							"testCaseName": "loginWithInvalidCredentials",
+							"isEnabled": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"SuiteName": "Advisor",
+			"TestName":"AdvisorPortal",
+			"Classes": [
+				{
+					"ClassName": "MyFirstTest",
+					"isEnabled": true,
+					"Methods": [
+						{
+							"testCaseName": "loginWithValidCredentials",
+							"isEnabled": false
+						},
+						{
+							"testCaseName": "loginWithInvalidCredentials",
+							"isEnabled": true
+						}
+					]
+				}
+			]
 		}
-		]
+	]
 }
